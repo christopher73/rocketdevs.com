@@ -4,10 +4,10 @@ import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <NavBar></NavBar>
       <Landing></Landing>
-    </div>
+    </React.Fragment>
   );
 }
 
