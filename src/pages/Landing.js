@@ -6,7 +6,7 @@ export default function Landing() {
       background: `url("${bg}")`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
-      opacity: ".6",
+      // opacity: ".6",
       height: "100vh",
       marginBottom: 0,
       marginLeft: "4rem"
@@ -16,7 +16,7 @@ export default function Landing() {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "rgba(130, 130, 130, 0.2)",
+      backgroundColor: "rgb(35, 35, 46,.8)",
       height: "100%"
     },
     h1: {
