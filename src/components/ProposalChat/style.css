@@ -1,0 +1,21 @@
+.speech-bubble {
+  position: relative;
+  background: #606363;
+  /* box-shadow: 2px -2px 1px 1px rgba(78, 78, 78, 0.2); */
+  bottom: 0;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0.906em solid transparent;
+  border-top-color: #606363;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -0.453em;
+  margin-bottom: -0.906em;
+}

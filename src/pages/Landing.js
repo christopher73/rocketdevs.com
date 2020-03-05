@@ -1,5 +1,6 @@
 import React from "react";
 import bg from "../assets/bg.jpg";
+import Logo from "../components/Logo/Logo";
 export default function Landing() {
   const style = {
     main: {
@@ -20,19 +21,18 @@ export default function Landing() {
       height: "100%"
     },
     h1: {
+      textTransform: "uppercase",
       textAlign: "center",
       color: "white",
-      width: "50%"
+      width: "75%",
+      fontSize: "3.1rem"
     }
   };
 
   return (
-    <main style={style.main}>
+    <main id="main-div" style={style.main}>
       <div style={style.div}>
-        <h1 style={style.h1}>
-          MORE THAN JUST A BEAUTIFUL DESIGN, OUR WEBSITES ARE BUILT FOR TURNING
-          VISITORS INTO CUSTOMERS
-        </h1>
+        <h1 style={style.h1}>Websites That Drive Results.</h1>
       </div>
     </main>
   );

@@ -33,7 +33,6 @@ export default function NavBar() {
             </svg>
           </a>
         </li>
-
         <li className="nav-item">
           <a href="#" className="nav-link">
             <svg
@@ -118,7 +117,6 @@ export default function NavBar() {
             <span className="link-text">About</span>
           </a>
         </li>
-
         <li className="nav-item">
           <a href="#" className="nav-link">
             <svg
@@ -147,7 +145,6 @@ export default function NavBar() {
             <span className="link-text">Contact</span>
           </a>
         </li>
-
         <DarkMode />
       </ul>
     </nav>
