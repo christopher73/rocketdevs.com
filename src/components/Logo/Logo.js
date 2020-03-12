@@ -8,11 +8,17 @@ export default function Logo() {
         color: "white",
         fontWeight: "bold",
         backgroundColor: "#df4949",
-        marginLeft: "6rem",
-        marginTop: "1.5rem"
+        // backgroundColor: "#23232e",
+        marginLeft: "6rem"
+        // marginTop: "1.5rem"
       }}
     >
-      <h1 style={{ marginRight: ".5rem", marginLeft: ".5rem" }}>RocketDevs</h1>
+      <h1
+        id="logo-shadow"
+        style={{ marginRight: ".5rem", marginLeft: ".5rem" }}
+      >
+        RocketDevs
+      </h1>
     </div>
   );
 }

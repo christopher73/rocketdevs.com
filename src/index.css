@@ -15,13 +15,13 @@
 #root,
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  min-width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.25rem;
 }
 
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
-}
+} */
 
 /* main {
   height: 100vh;
@@ -39,6 +39,12 @@ body::-webkit-scrollbar-thumb {
   margin-left: 4rem;
   padding: 1rem;
 */
+
+/* #logo-shadow {
+  text-shadow: 0 0 20px rgb(255, 106, 106), 1px 1px 20px rgb(255, 106, 106),
+    2px 2px 20px rgb(255, 106, 106), -1px -1px 20px rgb(255, 106, 106),
+    -2px -2px 20px rgb(255, 106, 106);
+} */
 
 .navbar {
   z-index: 99;
@@ -161,14 +167,32 @@ body::-webkit-scrollbar-thumb {
   .nav-link {
     justify-content: center;
   }
-  #main-div {
-    margin: 0 !important;
+  #landing {
+    margin: 0 0 4rem 0 !important;
+  }
+  #landing-main {
+    font-size: 1rem !important;
+  }
+  #landing-main h1 {
+    font-size: 1rem !important;
   }
   #main-logo {
+    margin-top: 1.4rem !important;
     margin-left: 0 !important;
+  }
+  #main-logo h1 {
+    font-size: 1rem !important;
+  }
+  #why-us h1 {
+    padding: 1rem !important;
+    font-size: 1rem !important;
   }
   #main-chat {
     margin-right: 0 !important;
+    display: none;
+  }
+  #why-us {
+    width: 90% !important;
   }
 }
 

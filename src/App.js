@@ -3,13 +3,15 @@ import Landing from "./pages/Landing";
 import NavBar from "./components/NavBar/NavBar";
 import Logo from "./components/Logo/Logo";
 import ProposalChat from "./components/ProposalChat/ProposalChat";
+// import AnimatedBG from "./components/AnimatedBG/AnimatedBG";
 function App() {
   return (
     <React.Fragment>
-      <NavBar></NavBar>
+      {/* <AnimatedBG /> */}
       <Logo />
+      <NavBar />
+      <Landing />
       <ProposalChat />
-      <Landing></Landing>
     </React.Fragment>
   );
 }
