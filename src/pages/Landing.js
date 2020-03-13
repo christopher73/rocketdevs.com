@@ -2,7 +2,7 @@ import React from "react";
 import bg from "../assets/bg.jpg";
 import WhyUs from "../components/WhyUs/WhyUs";
 import OurServices from "../components/OurServices/OurServices";
-// import AnimatedBG from "../components/AnimatedBG/AnimatedBG";
+import AnimatedBG from "../components/AnimatedBG/AnimatedBG";
 export default function Landing() {
   const style = {
     landing: {
@@ -27,7 +27,7 @@ export default function Landing() {
       backgroundPosition: "center center",
       // backgroundSize: "90% 90%",
       // backgroundColor: "rgb(35, 35, 46,.85)",
-      height: "90vh",
+      height: "75vh",
       width: "87vw",
       display: "flex",
       flexDirection: "column",
@@ -44,6 +44,7 @@ export default function Landing() {
       backgroundColor: "rgb(35, 35, 46,.85)"
     },
     mainH1: {
+      width: "75%",
       textTransform: "uppercase",
       textAlign: "center",
       color: "white",
@@ -64,7 +65,8 @@ export default function Landing() {
       </main>
       <WhyUs />
       <OurServices />
-      {/* <AnimatedBG></AnimatedBG> */}
+      <AnimatedBG></AnimatedBG>
+      {/* */}
     </div>
   );
 }

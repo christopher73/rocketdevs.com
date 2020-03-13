@@ -158,39 +158,51 @@ body::-webkit-scrollbar-thumb {
     width: 100vw;
     height: 5rem;
   }
+
   .logo {
     display: none;
   }
+
   .navbar-nav {
     flex-direction: row;
   }
+
   .nav-link {
     justify-content: center;
   }
+
   #landing {
     margin: 0 0 4rem 0 !important;
   }
+
   #landing-main {
     font-size: 1rem !important;
   }
+
   #landing-main h1 {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
+
   #main-logo {
     margin-top: 1.4rem !important;
     margin-left: 0 !important;
   }
+
   #main-logo h1 {
     font-size: 1rem !important;
   }
+
+  #why-us h2,
   #why-us h1 {
     padding: 1rem !important;
     font-size: 1rem !important;
   }
+
   #main-chat {
     margin-right: 0 !important;
     display: none;
   }
+
   #why-us {
     width: 90% !important;
   }
@@ -203,12 +215,15 @@ body::-webkit-scrollbar-thumb {
     width: 4rem;
     height: 100vh;
   }
+
   .navbar:hover {
     width: 16rem;
   }
+
   .navbar:hover .link-text {
     display: inline;
   }
+
   /* .navbar:hover .logo svg {
     margin-left: 13rem;
   } */

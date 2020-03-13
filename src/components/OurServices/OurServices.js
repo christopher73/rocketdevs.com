@@ -36,8 +36,22 @@ function serviceDivChildrem(service) {
 
 export default function OurServices() {
   const style = {
-    h1: {
-      textAlign: "center"
+    div: {
+      marginTop: "2rem"
+      // width: "98vw"
+    },
+    divP: {
+      textAlign: "center",
+      width: "75%",
+      marginLeft: "auto"
+    },
+    title: {
+      textAlign: "left",
+      background: "#23232e",
+      color: "white",
+      // position: "relative",
+      right: 0,
+      padding: "2rem"
     },
     serviceMainDiv: {
       display: "flex",
@@ -50,10 +64,12 @@ export default function OurServices() {
     }
   };
   return (
-    <div>
-      <h1 style={style.h1}> WHO WE ARE</h1>
-      <div style={style.serviceMainDiv}>
-        {serviceInfo.map((elem, i) => serviceDivChildrem(elem))}
+    <div style={style.div}>
+      <div id="why-us" style={style.divP}>
+        <h1 style={style.title}> What services we offer ?</h1>
+        <div style={style.serviceMainDiv}>
+          {serviceInfo.map((elem, i) => serviceDivChildrem(elem))}
+        </div>
       </div>
     </div>
   );
