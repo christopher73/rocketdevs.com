@@ -3,26 +3,25 @@ export default function WhyUs() {
   const style = {
     div: {
       marginTop: "2rem"
-      // width: "98vw"
     },
     divP: {
-      textAlign: "center",
-      width: "75%",
+      width: "60%",
       marginRight: "auto"
     },
     title: {
       textAlign: "right",
       background: "#23232e",
       color: "white",
-      // position: "relative",
       left: 0,
-      padding: "2rem"
+      padding: "1rem",
+      fontSize: "2rem",
+      fontWeight: "bold"
     },
     desc: {
       color: "white",
-      lineHeight: 1.6,
-      background: "#141418",
-      padding: "4rem",
+      lineHeight: 1.85,
+      background: "rgba(35, 35, 46, 0.96)",
+      padding: "2rem",
       textAlign: "left",
       marginLeft: "2rem",
       marginTop: "2rem"
@@ -30,10 +29,12 @@ export default function WhyUs() {
   };
 
   return (
-    <div style={style.div}>
-      <div id="why-us" style={style.divP}>
-        <h1 style={style.title}> Who we are ?</h1>
-        <h2 style={style.desc}>
+    <div className="landing-mai-div" style={style.div}>
+      <div style={style.divP}>
+        <h1 className="mai-title" style={style.title}>
+          Who we are ?
+        </h1>
+        <p style={style.desc}>
           Troy Web Consulting is the custom software development partner of
           choice for companies that want to optimize their business processes
           and customer experiences with efficient, secure and reliable software
@@ -44,7 +45,7 @@ export default function WhyUs() {
           committed, energetic team of kick-ass analysts, designers, developers,
           and project managers with one goal in mind -- helping our clients and
           their products shine.
-        </h2>
+        </p>
       </div>
     </div>
   );

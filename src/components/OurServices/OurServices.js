@@ -4,19 +4,26 @@ import { serviceInfo } from "./servicesData";
 function serviceDivChildrem(service) {
   return (
     <div
+      className="services-div"
       style={{
+        // width: "30%",
         border: "solid black 1px",
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginBottom: "20px"
-        // margin: 10
+        padding: "2rem",
+        marginRight: "2rem",
+        marginTop: "2rem",
+        background: "rgba(35, 35, 46, 0.96)",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start"
       }}
     >
       <h1
         style={{
-          margin: 0,
-          padding: "1rem",
-          fontSize: "1.2rem"
+          margin: 4,
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold"
         }}
       >
         {service.title}
@@ -24,12 +31,26 @@ function serviceDivChildrem(service) {
       <p
         style={{
           margin: 0,
-          padding: "1rem",
-          fontSize: "1.2rem"
+          lineHeight: 1.85,
+          fontWeight: "lighter",
+          display: "block",
+          textAlign: "left"
+          // fontSize: "1.2rem"
         }}
       >
         {service.description}
       </p>
+      <button
+        style={{
+          marginTop: "auto",
+          // alignSelf: "flex-end",
+          padding: "5px 15px",
+          pointerEvents: "auto",
+          fontSize: "1.2rem"
+        }}
+      >
+        Learn More ...
+      </button>
     </div>
   );
 }
@@ -38,35 +59,34 @@ export default function OurServices() {
   const style = {
     div: {
       marginTop: "2rem"
-      // width: "98vw"
     },
     divP: {
-      textAlign: "center",
-      width: "75%",
+      width: "80%",
       marginLeft: "auto"
     },
     title: {
       textAlign: "left",
       background: "#23232e",
       color: "white",
-      // position: "relative",
       right: 0,
-      padding: "2rem"
+      padding: "1rem",
+      fontSize: "2rem",
+      fontWeight: "bold",
+      marginBottom: 0
     },
     serviceMainDiv: {
       display: "flex",
-      flexDirection: "row",
-      justifyContent: "flexStart",
-      flexGrow: "1",
       flexWrap: "wrap",
-      // alignContent: "center",
-      alignItems: "center"
+      // justifyContent: "center",
+      justifyContent: "flex-start"
     }
   };
   return (
-    <div style={style.div}>
-      <div id="why-us" style={style.divP}>
-        <h1 style={style.title}> What services we offer ?</h1>
+    <div className="landing-mai-div" style={style.div}>
+      <div style={style.divP}>
+        <h1 className="mai-title" style={style.title}>
+          What we do ?
+        </h1>
         <div style={style.serviceMainDiv}>
           {serviceInfo.map((elem, i) => serviceDivChildrem(elem))}
         </div>
