@@ -3,6 +3,7 @@ import bg from "../assets/bg.jpg";
 import WhyUs from "../components/WhyUs/WhyUs";
 import OurServices from "../components/OurServices/OurServices";
 import AnimatedBG from "../components/AnimatedBG/AnimatedBG";
+import Forms from "../components/Forms/Forms";
 export default function Landing() {
   const style = {
     landing: {
@@ -27,8 +28,8 @@ export default function Landing() {
       backgroundPosition: "center center",
       // backgroundSize: "90% 90%",
       // backgroundColor: "rgb(35, 35, 46,.85)",
-      height: "75vh",
-      width: "87vw",
+      height: "100vh",
+      width: "100%",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -46,9 +47,10 @@ export default function Landing() {
     mainH1: {
       width: "75%",
       textTransform: "uppercase",
-      textAlign: "center",
+      textAlign: "left",
       color: "white",
-      fontSize: "3.1rem"
+      fontSize: "6.1rem",
+      fontWeight: "lighter"
     }
   };
 
@@ -58,15 +60,15 @@ export default function Landing() {
         <div style={style.mainDiv}>
           <div style={style.mainDivH1}>
             <h1 id="main-h1" style={style.mainH1}>
-              we build scalable & smart solutions that lives on the cloud
+              we <br /> build <br /> scalable & <br /> smart solutions
             </h1>
           </div>
         </div>
       </main>
       <WhyUs />
       <OurServices />
-      <AnimatedBG></AnimatedBG>
-      {/* */}
+      <Forms />
+      {/* <AnimatedBG /> */}
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function WhyUs() {
       marginTop: "2rem"
     },
     divP: {
-      width: "60%",
+      width: "80%",
       marginRight: "auto"
     },
     title: {
@@ -21,8 +21,8 @@ export default function WhyUs() {
       color: "white",
       lineHeight: 1.85,
       background: "rgba(35, 35, 46, 0.96)",
-      padding: "2rem",
       textAlign: "left",
+      padding: "2rem",
       marginLeft: "2rem",
       marginTop: "2rem"
     }
@@ -35,15 +35,15 @@ export default function WhyUs() {
           Who we are ?
         </h1>
         <p style={style.desc}>
-          Troy Web Consulting is the custom software development partner of
-          choice for companies that want to optimize their business processes
-          and customer experiences with efficient, secure and reliable software
-          application solutions. Whether you need to update and integrate legacy
-          systems with leading-edge technologies or design and build custom
-          software solutions from the ground up, Troy Web Consulting is the team
-          to rely upon. Whatever your software application need, we are a fully
-          committed, energetic team of kick-ass analysts, designers, developers,
-          and project managers with one goal in mind -- helping our clients and
+          RocketDevs is the custom software development partner of choice for
+          companies that want to optimize their business processes and customer
+          experiences with efficient, secure and reliable software application
+          solutions. Whether you need to update and integrate legacy systems
+          with leading-edge technologies or design and build custom software
+          solutions from the ground up, RocketDevs is the team to rely upon.
+          Whatever your software application need, we are a fully committed,
+          energetic team of kick-ass analysts, designers, developers, and
+          project managers with one goal in mind -- helping our clients and
           their products shine.
         </p>
       </div>

@@ -4,18 +4,15 @@ import { serviceInfo } from "./servicesData";
 function serviceDivChildrem(service) {
   return (
     <div
-      className="services-div"
       style={{
-        // width: "30%",
-        border: "solid black 1px",
-        padding: "2rem",
-        marginRight: "2rem",
-        marginTop: "2rem",
+        width: "40%",
         background: "rgba(35, 35, 46, 0.96)",
         color: "white",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
+        padding: "2rem",
+        marginBottom: "2rem"
       }}
     >
       <h1
@@ -30,12 +27,11 @@ function serviceDivChildrem(service) {
       </h1>
       <p
         style={{
-          margin: 0,
+          marginBottom: "1rem",
           lineHeight: 1.85,
           fontWeight: "lighter",
           display: "block",
-          textAlign: "left"
-          // fontSize: "1.2rem"
+          textAlign: "center"
         }}
       >
         {service.description}
@@ -71,14 +67,17 @@ export default function OurServices() {
       right: 0,
       padding: "1rem",
       fontSize: "2rem",
-      fontWeight: "bold",
-      marginBottom: 0
+      fontWeight: "bold"
+      // marginBottom: 0
     },
     serviceMainDiv: {
       display: "flex",
       flexWrap: "wrap",
       // justifyContent: "center",
-      justifyContent: "flex-start"
+      justifyContent: "space-between",
+      // padding: "2rem",
+      marginRight: "2rem",
+      marginTop: "2rem"
     }
   };
   return (
