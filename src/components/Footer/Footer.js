@@ -3,7 +3,9 @@ export default function Footer() {
   const style = {
     div: {
       width: "100vw",
-      marginTop: "4rem"
+      backgroundColor: "black",
+      marginTop: "4rem",
+      color: "white"
     },
     h1: {
       margin: "auto",

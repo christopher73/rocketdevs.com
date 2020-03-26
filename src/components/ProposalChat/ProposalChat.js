@@ -27,7 +27,7 @@ export default function ProposalChat() {
 
       <h1
         style={{
-          backgroundColor: "#df4949",
+          backgroundColor: "#ef0d33",
           textAlign: "center",
           marginBottom: 0,
           marginLeft: "auto",

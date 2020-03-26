@@ -1,40 +1,18 @@
 import React from "react";
+import { styles } from "./styles";
 export default function WhyUs() {
-  const style = {
-    div: {
-      marginTop: "2rem"
-    },
-    divP: {
-      width: "80%",
-      marginRight: "auto"
-    },
-    title: {
-      textAlign: "right",
-      background: "#23232e",
-      color: "white",
-      left: 0,
-      padding: "1rem",
-      fontSize: "2rem",
-      fontWeight: "bold"
-    },
-    desc: {
-      color: "white",
-      lineHeight: 1.85,
-      background: "rgba(35, 35, 46, 0.96)",
-      textAlign: "left",
-      padding: "2rem",
-      marginLeft: "2rem",
-      marginTop: "2rem"
-    }
-  };
-
   return (
-    <div className="landing-mai-div" style={style.div}>
-      <div style={style.divP}>
-        <h1 className="mai-title" style={style.title}>
+    <div className="landing-mai-div" style={styles.div}>
+      <div style={styles.desc}>
+        {" "}
+        <h1 className="main-title" style={styles.title}>
           Who we are ?
-        </h1>
-        <p style={style.desc}>
+        </h1>{" "}
+        <p>
+          {/* {" "}
+          <div className="box">
+            <div className="wave -three"> </div>{" "}
+          </div>{" "} */}
           RocketDevs is the custom software development partner of choice for
           companies that want to optimize their business processes and customer
           experiences with efficient, secure and reliable software application
@@ -46,7 +24,7 @@ export default function WhyUs() {
           project managers with one goal in mind -- helping our clients and
           their products shine.
         </p>
-      </div>
+      </div>{" "}
     </div>
   );
 }

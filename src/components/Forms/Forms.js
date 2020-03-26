@@ -1,121 +1,64 @@
 import React from "react";
-
+import "./styles.css";
+import SvgWave from "./SvgWave";
 export default function Forms() {
-  const style = {
-    div: {
-      marginTop: "2rem"
-    },
-    divP: {
-      width: "80%",
-      marginRight: "auto"
-    },
-    title: {
-      textAlign: "right",
-      background: "#23232e",
-      color: "white",
-      left: 0,
-      padding: "1rem",
-      fontSize: "2rem",
-      fontWeight: "bold"
-    },
-    desc: {
-      color: "white",
-      lineHeight: 1.85,
-      background: "rgba(35, 35, 46, 0.96)",
-      textAlign: "left",
-      padding: "2rem",
-      marginLeft: "2rem",
-      marginTop: "2rem",
-      display: "flex",
-      flexWrap: "wrap"
-    },
-    formFields: {
-      width: "45%",
-      margin: "auto"
-    },
-    formLabel: {
-      // padding: "5px",
-      width: "100%",
-      display: "block",
-      fontSize: "1rem"
-    },
-    formInput: {
-      // pointerEvents: "none",
-      // margin: "auto",
-      marginBottom: 20,
-      width: "100%"
-      // padding: "5px"
-    }
-  };
   return (
-    <div className="landing-mai-div" style={style.div}>
-      <div style={style.divP}>
-        <h1 className="mai-title" style={style.title}>
-          Get a Quote
-        </h1>
-        <form style={style.desc} action="/">
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="name">
+    <SvgWave>
+      <div className="form-container">
+        <h1 className="form-title">Get a Quote</h1>
+        <form className="form" action="/">
+          <div className="form-field">
+            <label className="form-label" htmlFor="name">
               Name:
             </label>
-            <input style={style.formInput} type="text" id="name" />
+            <input className="form-input" type="text" id="name" />
           </div>
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="email">
+          <div className="form-field">
+            <label className="form-label" htmlFor="email">
               Email:
             </label>
-            <input style={style.formInput} type="text" id="email" />
+            <input className="form-input" type="text" id="email" />
           </div>
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="phone">
+          <div className="form-field">
+            <label className="form-label" htmlFor="phone">
               Phone:
             </label>
-            <input style={style.formInput} type="text" id="phone" />
+            <input className="form-input" type="text" id="phone" />
           </div>
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="company">
+          <div className="form-field">
+            <label className="form-label" htmlFor="company">
               Company:
             </label>
-            <input style={style.formInput} type="text" id="company" />
+            <input className="form-input" type="text" id="company" />
           </div>
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="budget">
+          <div className="form-field">
+            <label className="form-label" htmlFor="budget">
               Budget:
             </label>
-            <input style={style.formInput} type="text" id="budget" />
+            <input className="form-input" type="text" id="budget" />
           </div>
-          <div style={style.formFields}>
-            <label style={style.formLabel} for="document">
+          <div className="form-field">
+            <label className="form-label" htmlFor="document">
               Document:
             </label>
-            <input style={style.formInput} type="text" id="document" />
+            <input className="form-input" type="text" id="document" />
           </div>
-          <div style={{ width: "95%", margin: "auto" }}>
-            <label style={style.formLabel} for="tellus">
+          <div className="form-field">
+            <label className="form-label" htmlFor="tellus">
               Tell us about your project:
             </label>
-            <input
-              style={{ width: "100%", height: "100px" }}
-              type="text"
-              id="tellus"
-            />
+            <textarea type="text" className="form-textArea" />
           </div>
           <div style={{ width: "95%", margin: "auto" }}>
             <input
-              style={{
-                width: "50%",
-                margin: "auto",
-                display: "block",
-                marginTop: "1rem",
-                padding: "5px 15px",
-                fontSize: "1.2rem"
-              }}
+              className="services-childrens-button"
+              id="form-send-btn"
               type="submit"
-              value="SEND"
+              value=" SEND "
             />
           </div>
         </form>
       </div>
-    </div>
+    </SvgWave>
   );
 }

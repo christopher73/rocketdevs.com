@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../assets/bg.jpg";
 import WhyUs from "../components/WhyUs/WhyUs";
-import OurServices from "../components/OurServices/OurServices";
+import OurServices from "../components/OurServices";
 import AnimatedBG from "../components/AnimatedBG/AnimatedBG";
 import Forms from "../components/Forms/Forms";
 export default function Landing() {
@@ -9,14 +9,12 @@ export default function Landing() {
     landing: {
       display: "flex",
       flexDirection: "column",
-      justifyContent: "flexStart",
-      marginLeft: "4rem"
+      justifyContent: "flexStart"
     },
 
     main: {
       display: "flex",
       height: "100vh",
-      // width: "100vw",
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
@@ -25,9 +23,9 @@ export default function Landing() {
     mainDiv: {
       background: `url("${bg}")`,
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "center center",
-      // backgroundSize: "90% 90%",
-      // backgroundColor: "rgb(35, 35, 46,.85)",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
+      backgroundSize: "cover",
       height: "100vh",
       width: "100%",
       display: "flex",
@@ -42,13 +40,15 @@ export default function Landing() {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "rgb(35, 35, 46,.85)"
+      backgroundColor: "rgba(25, 30, 50, 0.9)" //SAVE!!!
     },
     mainH1: {
+      color: "#fff",
+      textTransform: "uppercase",
+      textShadow: "0 1px 0 rgba(white, .1)",
       width: "75%",
       textTransform: "uppercase",
       textAlign: "left",
-      color: "white",
       fontSize: "6.1rem",
       fontWeight: "lighter"
     }
@@ -67,7 +67,9 @@ export default function Landing() {
       </main>
       <WhyUs />
       <OurServices />
+
       <Forms />
+
       {/* <AnimatedBG /> */}
     </div>
   );

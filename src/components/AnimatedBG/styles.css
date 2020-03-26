@@ -1,20 +1,3 @@
-/* .hooks-main > svg {
-  display: none;
-} */
-
-#main-h1,
-.landing-mai-div {
-  pointer-events: none;
-  z-index: 98 !important;
-}
-.landing-mai-div form {
-  pointer-events: auto !important;
-}
-#main-chat,
-#main-logo {
-  z-index: 99 !important;
-}
-
 .hooks-main {
   /* z-index: 97 !important; */
   position: fixed;

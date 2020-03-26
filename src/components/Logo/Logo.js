@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 export default function Logo() {
   return (
     <div
@@ -7,10 +8,8 @@ export default function Logo() {
         position: "fixed",
         color: "white",
         fontWeight: "bold",
-        backgroundColor: "#df4949",
-        // backgroundColor: "#23232e",
-        marginLeft: "6rem"
-        // marginTop: "1.5rem"
+        backgroundColor: "#ef0d33",
+        left: "6%"
       }}
     >
       <h1

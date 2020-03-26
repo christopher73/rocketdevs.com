@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik+Mono+One&family=Rubik:ital,wght@0,700;1,900&display=swap");
 
 :root {
   font-size: 16px;
+  /* font-family: "Rubik", sans-serif;  */
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.2rem;
-  font-weight: lighter;
-  background-color: #e6e6e6;
+  font-weight: 700;
+  background-color: #fff;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
-
 #root,
 html,
 body {
@@ -22,70 +23,82 @@ body {
   padding: 0;
 }
 .navbar {
-  z-index: 99;
+  z-index: 50;
   position: fixed;
-  background-color: var(--bg-primary);
-  transition: width 600ms ease;
+  height: 100%;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  /* background-color: none;
+   */
 }
-
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navbar-nav {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100%;
+  height: 90%;
+  width: 100vw;
+  justify-content: center;
 }
-
 .nav-item {
   width: 100%;
-}
-
-.nav-item:last-child {
-  margin-top: auto;
-}
-
-.nav-link {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.nav-link {
+  margin-top: 20px;
+  width: 300px;
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
-
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
+}
+.nav-item:hover {
   background: var(--bg-secondary);
   color: var(--text-secondary);
 }
-
 .link-text {
-  display: none;
+  font-size: 2.5rem;
+  display: inline;
   margin-left: 3.2rem;
 }
-
 .nav-link svg {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  margin: 0 1.1rem;
+  width: 1.7rem;
+  min-width: 1.7rem;
 }
-
 .fa-primary {
   color: #ff7e9e;
 }
-
 .fa-secondary {
   color: #df4949;
 }
-
+.fa-primary2 {
+  color: #a31947;
+}
+.fa-secondary2 {
+  color: #2e176b;
+}
 .fa-primary,
 .fa-secondary {
   transition: var(--transition-speed);
 }
-
 .logo {
   font-weight: bold;
   text-transform: uppercase;
@@ -97,7 +110,6 @@ body {
   letter-spacing: 0.3ch;
   width: 100%;
 }
-
 .logo a {
   display: flex;
   align-items: center;
@@ -106,7 +118,6 @@ body {
   text-decoration: none;
   transition: var(--transition-speed);
 }
-
 .logo svg {
   width: 1.5rem;
   min-width: 1.5rem;
@@ -114,71 +125,36 @@ body {
   transform: rotate(0deg);
   transition: var(--transition-speed);
 }
-
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-  }
-
-  .nav-link {
-    justify-content: center;
-  }
-
   #landing {
     margin: 0 0 4rem 0 !important;
   }
-
   #landing-main {
     font-size: 1rem !important;
   }
-
   #landing-main h1 {
     font-size: 2rem !important;
   }
-
   #main-logo {
     margin-top: 1.4rem !important;
     margin-left: 0 !important;
   }
-
   #main-logo h1 {
     font-size: 1rem !important;
   }
-
-  .landing-mai-div * {
-    width: auto !important;
-    margin: 10px auto !important;
-  }
-
-  .landing-mai-div p {
-    /* margin-bottom: 0 !important;
-    padding-top: 0.5rem !important; */
+  .services-childrens-p {
     font-size: 1rem !important;
   }
-  .mai-title {
-    text-align: center !important;
-    font-size: 2rem !important;
-  }
-  .services-div,
-  .services-div h1 {
-    text-align: center;
-    font-size: 1.5rem !important;
+  .services-childrens-button {
     width: 100% !important;
+  }
+  .services-childrens-div {
+    padding: 0.4rem !important;
   }
   #main-chat {
     margin-right: 0 !important;
@@ -190,63 +166,88 @@ body {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 4rem;
-    height: 100vh;
-  }
-
-  .navbar:hover {
-    width: 16rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
+    width: 100%;
+    height: 100%;
   }
   .services-div {
-    /* padding: 0 !important; */
     width: 60% !important;
   }
-  /* .navbar:hover .logo svg {
-    margin-left: 13rem;
-  } */
   .navbar:hover .logo-text {
     left: 0px;
   }
 }
-/* 
- */
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+.box {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, 0.2);
+  background: lighten(#f0f4c3, 10%);
+  position: absolute;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
+.wave {
+  opacity: 0.4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 5000ms infinite linear;
 }
 
-.solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-secondary: #f5e5b8;
-}
-
-.theme-icon {
-  display: none;
-}
-
-.dark #darkIcon {
+.box:after {
+  content: "";
   display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(#e8a, 1),
+    rgba(#def, 0) 80%,
+    rgba(white, 0.5)
+  );
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
 }
 
-.light #lightIcon {
-  display: block;
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }
 
-.solar #solarIcon {
-  display: block;
+.parallax > use {
+  animation: move-forever 12s linear infinite;
+}
+.parallax use:nth-child(1) {
+  animation-delay: -2s;
+}
+.parallax use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+.parallax use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
 }
