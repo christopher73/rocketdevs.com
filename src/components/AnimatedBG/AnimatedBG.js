@@ -25,14 +25,3 @@ export default function AnimatedBG() {
     </div>
   );
 }
-{
-  /* <svg style={{ position: "absolute", width: 0, height: 0 }}>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
-          <feColorMatrix
-            in="blur"
-            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7"
-          />
-        </filter> 
-      </svg> */
-}

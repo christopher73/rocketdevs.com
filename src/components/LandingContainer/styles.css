@@ -1,0 +1,45 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flexStart;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.main-div {
+  background: url("../../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-div1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(25, 30, 50, 0.9); /* SAVE!!! */
+}
+.main-div1-h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(white, 0.1);
+  width: 75%;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
+}

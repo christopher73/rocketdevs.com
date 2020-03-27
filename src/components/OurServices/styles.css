@@ -23,9 +23,9 @@
   margin: auto;
 }
 .services-childrens-div {
+  z-index: 3;
   min-width: 40%;
   background: white;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,6 +62,7 @@
   text-align: center;
 }
 .services-childrens-button {
+  /* z-index: 99 !important; */
   background-color: #94e0ba;
   color: white;
   font-weight: bold;

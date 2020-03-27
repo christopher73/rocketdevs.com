@@ -1,0 +1,39 @@
+.whoweare-div {
+  width: 60%;
+  /* color: #7f7fd6; */
+  color: #39207c;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2rem;
+  padding-top: 0;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+/* .whoweare-div::before {
+  z-index: -1;
+  content: "";
+  left: 0;
+  margin-top: -2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #563f8b6e;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+} */
+
+.whoweare-h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  font-size: 2.5rem;
+  width: 100%;
+  margin-right: auto;
+  font-family: "Rubik", sans-serif;
+  color: #39207c;
+  left: 0;
+  font-weight: 700;
+}
