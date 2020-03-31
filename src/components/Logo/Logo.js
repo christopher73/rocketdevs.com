@@ -1,10 +1,13 @@
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 export default function Logo() {
   return (
-    <div
+    <Link
+      to="/"
       id="main-logo"
       style={{
+        textDecoration: "none",
         position: "fixed",
         color: "white",
         fontWeight: "bold",
@@ -18,6 +21,6 @@ export default function Logo() {
       >
         RocketDevs
       </h1>
-    </div>
+    </Link>
   );
 }

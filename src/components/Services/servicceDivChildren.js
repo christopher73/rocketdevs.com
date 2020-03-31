@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
 import "./styles.css";
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 40,
@@ -8,7 +9,7 @@ const calc = (x, y) => [
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
-export default function(service, i) {
+export default function(service, i, desc, btn) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 80, tension: 350, friction: 40 }
@@ -24,8 +25,14 @@ export default function(service, i) {
     >
       <div className="services-svg">{service.svg}</div>
       <h1 className="services-h1">{service.title}</h1>
-      <p className="services-childrens-p">{service.description}</p>
-      <button className="services-childrens-button">Learn More ...</button>
+      {desc ? (
+        <p className="services-childrens-p">{service.description}</p>
+      ) : null}
+      {btn ? (
+        <Link className="services-childrens-button" to={service.link}>
+          Learn More ...
+        </Link>
+      ) : null}
     </animated.div>
   );
 }

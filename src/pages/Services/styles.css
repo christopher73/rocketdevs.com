@@ -1,0 +1,47 @@
+.container-header {
+  height: 30vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0;
+  /* padding-top: 4rem; */
+  background-color: rgba(25, 30, 50, 0.9); /* SAVE!!! */
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.description {
+  color: #39207c;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 4rem;
+  font-size: 1.3rem;
+}
+.web-design-div {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-design-div-svg {
+  width: 50%;
+  height: 50%;
+}
+.web-design-svg {
+  color: #d37d7d73;
+}

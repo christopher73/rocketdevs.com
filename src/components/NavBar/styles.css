@@ -2,10 +2,20 @@
   position: fixed;
   width: 100vw;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 98;
+  padding-bottom: 15px;
 }
+.bgOff {
+  background-color: none;
+}
+.bgOn {
+  background-color: #23232eb7;
+}
+
 .hide {
-  height: 4rem !important;
+  height: 5rem;
   background-color: none;
 }
 .show {
@@ -14,12 +24,31 @@
   height: 100vh !important;
   background-color: #23232e;
 }
+.phone-num-div {
+  margin-right: 8rem;
+  margin-left: auto;
+
+  color: white;
+}
+.phone-num-svg-num {
+  margin-left: 10px;
+}
+.phone-num-div-a {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+.phone-num-svg {
+  width: 30px;
+}
 .burger-icon {
   z-index: 99;
-  margin-left: auto;
-  margin-top: 1.5rem;
-  margin-right: 3rem;
-  display: inline-block;
+  top: 1.2rem;
+  right: 2rem;
+  position: fixed;
   cursor: pointer;
 }
 .bar1,

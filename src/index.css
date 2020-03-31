@@ -22,26 +22,29 @@ body {
   margin: 0;
   padding: 0;
 }
-@media only screen and (min-width: 600px) {
-  .main-div1-h1 {
-    font-size: 4rem !important;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .main-div1-h1 {
-    font-size: 6.4rem !important;
-  }
-}
+
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 519px) {
+  .main-div1-h1 {
+    font-size: 2rem !important;
+  }
   #main-chat {
     margin-right: 0;
     display: none;
   }
-  #main-logo h1 {
-    font-size: 1.6rem !important;
+  .burger-icon {
+    top: 0.5rem !important;
+    right: 1rem !important;
   }
-
+  .phone-num-svg-num {
+    display: none;
+  }
+  #main-logo h1 {
+    font-size: 1.2rem !important;
+  }
+  .container-header {
+    height: 40vh !important;
+  }
   .whoweare-div,
   .whoweare-h1,
   .services-main-title,
@@ -54,15 +57,50 @@ body {
     width: 90% !important;
     text-align: center !important;
   }
-  .services-childrens-p {
+  .services-childrens-p,
+  .whoweare-div p {
     font-size: 0.9rem !important;
   }
+  .whoweare-h1,
+  .services-main-title {
+    font-size: 1.8rem !important;
+  }
   .services-childrens-button {
-    width: 100%;
+    width: 80% !important;
+    font-size: 0.7rem !important;
+  }
+  .form-input {
+    width: 250px !important;
+  }
+  #form-send-btn {
+    font-size: 1.4rem !important;
+    width: 100% !important;
+  }
+  .title {
+    font-size: 1.4rem !important;
+  }
+  .phone-num-div {
+    margin-right: 6rem !important;
+    margin-top: 1rem !important;
+  }
+  .hide {
+    height: 3rem !important;
   }
 }
 /* Medium screens */
-@media only screen and (max-width: 845px) {
+@media all and (max-width: 699px) and (min-width: 520px) {
+  .phone-num-svg-num {
+    display: none;
+  }
+  .phone-num-div {
+    margin-right: 2rem !important;
+  }
+  .title {
+    font-size: 1.7rem !important;
+  }
+  .main-div1-h1 {
+    font-size: 3.4rem !important;
+  }
   .whoweare-div,
   .whoweare-h1,
   .services-main-title,
@@ -78,13 +116,27 @@ body {
   .form-title {
     font-size: 2.5rem !important;
   }
-  .burger-icon {
-    margin-top: 1rem !important;
-    margin-right: 2rem !important;
+  /* .burger-icon {
+    margin-top: 0.5rem !important;
+    margin-right: 0.rem !important;
+  } */
+  .form-input {
+    width: 250px !important;
+  }
+  #form-send-btn {
+    font-size: 1.4rem !important;
+    width: 100% !important;
   }
 }
 /* Large screens */
-@media only screen and (min-width: 1200px) {
+@media all and (max-width: 1200px) and (min-width: 700px) {
+  .services-main-div {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .services-childrens-div {
+    margin: 20px !important;
+  }
   .navbar {
     top: 0;
     width: 100%;
@@ -97,6 +149,20 @@ body {
     left: 0px;
   }
   .form {
-    width: 50% !important;
+    width: 75vw !important;
+  }
+  .main-div1-h1 {
+    font-size: 4em !important;
+  }
+}
+@media all and (min-width: 1201px) {
+  .services-main-div {
+    width: 80vw !important;
+  }
+  .form {
+    width: 50vw !important;
+  }
+  .main-div1-h1 {
+    font-size: 5.4rem !important;
   }
 }
