@@ -33,21 +33,51 @@ export default function Forms() {
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="budget">
-              Budget:
+              Estimated Budget:
             </label>
-            <input className="form-input" type="text" id="budget" />
+            <input className="form-input" type="text" id="company" />
+
+            {/* <select className="form-input" id="Budget">
+              <option value="">Select Range </option>
+              <option value="au">Australia</option>
+              <option value="ca">Canada</option>
+              <option value="usa">USA</option>
+            </select> */}
           </div>
-          <div className="form-field">
+          {/* <div className="form-field">
             <label className="form-label" htmlFor="document">
               Document:
             </label>
             <input className="form-input" type="text" id="document" />
-          </div>
+          </div> */}
           <div className="form-field">
             <label className="form-label" htmlFor="tellus">
               Tell us about your project:
             </label>
-            <textarea type="text" className="form-textArea form-input" />
+            <textarea
+              id="tellus"
+              name="tellus"
+              placeholder="..."
+              type="text"
+              className="form-textArea form-input"
+            />
+          </div>{" "}
+          <div className="form-field ">
+            <label className="form-label" for="file">
+              Attach an RFP
+            </label>
+            <input
+              style={{
+                padding: "1%",
+                // paddingRight: "0px",
+                width: "98%",
+                borderRadius: ".7rem",
+                backgroundColor: "#ff7e9e"
+              }}
+              // className="services-childrens-button"
+              type="file"
+              accept=".doc, .docx,.ppt, .pptx,.txt,.pdf"
+            />
           </div>
           <div className="form-field">
             <input

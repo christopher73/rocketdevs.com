@@ -82,10 +82,8 @@ export default function SoftwareDev() {
         className="whoweare-div"
       >
         <p>{data[1].description}</p>
-        <p>
-          We offer end-to-end mobile app development solutions for iOS (iPhone
-          and iPad), Android, and cross-platform applications.
-        </p>
+        <h1 className="whoweare-h1">end-to-end mobile app development</h1>
+        <p> for iOS, Android, and cross-platform applications.</p>
       </div>
       <div className="services-main-div">
         {resultsData.map((elem, i) => serviceDivChildren(elem, i, true, false))}

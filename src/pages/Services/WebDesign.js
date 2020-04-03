@@ -188,13 +188,15 @@ export default function WebDesign() {
       ),
       description: (
         <p style={{ margin: 0, textAlign: "left" }}>
-          When off-the-shelf or out-of-the-box is not an option, e9digital's
+          When off-the-shelf or out-of-the-box is not an option, RocketDevs's
           NYC-based custom applications development team can take your idea and
           turn into a plan; take that plan and turn into code; take that code
           and turn it into a reality...in 90 days.
-          <br /> - Fabric search engine -
-          <br />- Encrypted file sharing app - <br />- Business lending portal -
-          <br />- Networking management app - <br />
+          <br />- Fabric search engine
+          <br />- Encrypted file sharing app
+          <br />- Business lending portal
+          <br />- Networking management app
+          <br />
           Now that you've got the idea of what we can do...let us get your idea
           done.
         </p>
@@ -216,7 +218,7 @@ export default function WebDesign() {
           }}
         />
       ),
-      description: `Don't hate the game; hate the player...or in this case, the inept web developer who created that crappy WordPress site. The reality is WordPress is a rock solid, content management system (CMS) that should be the foundation of most marketing websites. In fact, in the hands of capable web developers, like e9digital, there's virtually nothing that can't be done with it.
+      description: `Don't hate the game; hate the player...or in this case, the inept web developer who created that crappy WordPress site. The reality is WordPress is a rock solid, content management system (CMS) that should be the foundation of most marketing websites. In fact, in the hands of capable web developers, like RocketDevs, there's virtually nothing that can't be done with it.
 
       In the end, you shouldn't be choosing the web platform. You should be choosing the right web developer that will choose the right platform for you.`
     },
@@ -241,7 +243,7 @@ export default function WebDesign() {
       
       The only question ... is the money coming in or going out?
       
-      Choosing e9digital as your ecommerce web development team means that you will make one investment and then your ecommerce website project will be completed correctly, the first time.
+      Choosing RocketDevs as your ecommerce web development team means that you will make one investment and then your ecommerce website project will be completed correctly, the first time.
       
       And then that leaves you only one problem: How are you going to spend your new found wealth?`
     }
@@ -253,7 +255,7 @@ export default function WebDesign() {
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"
       >
-        <h1 className="title">{data[0].title}</h1>{" "}
+        <h1 className="title">{data[0].title}</h1>
       </div>
       <div className="whoweare-div">
         <p style={{ textAlign: "center", paddingTop: 40 }}>
@@ -266,8 +268,7 @@ export default function WebDesign() {
         )}
       </div>
       <h1 style={{ marginTop: "4rem" }} className="whoweare-h1">
-        {" "}
-        Check our numbers
+        Our numbers
       </h1>
       <div className="services-main-div">
         {resultsData.map((elem, i) => serviceDivChildren(elem, i, true, false))}

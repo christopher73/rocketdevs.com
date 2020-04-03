@@ -286,81 +286,80 @@ export const data = [
     allows independent systems to use simple 
     Internet protocols to communicate and 
     distribute work.`
-  },
-  {
-    title: "IT Services",
-    link: "it-services",
-    svg: (
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        data-prefix="fas"
-        data-icon="server"
-        role="img"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-        className=" svg-inline--fa fa-server fa-w-14 fa-9x"
-      >
-        <defs>
-          <clipPath id="clip-2TtIpXVUXcFn">
-            <path
-              fill="currentColor"
-              d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
-            ></path>
-          </clipPath>
-          <mask
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            id="mask-BUDMbFsgInkO"
-            maskUnits="userSpaceOnUse"
-            maskContentUnits="userSpaceOnUse"
-          >
-            <rect
-              x="0"
-              y="0"
-              width="100%"
-              height="100%"
-              fill="currentColor"
-              className="fa-secondary2"
-            ></rect>
-            <g transform="translate(224 256)" className="fa-secondary">
-              <g
-                transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
-                className="fa-secondary"
-              >
-                <path
-                  fill="currentColor"
-                  d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"
-                  transform="translate(-256 -256)"
-                  className="fa-secondary"
-                ></path>
-              </g>
-            </g>
-          </mask>
-        </defs>
-        <rect
-          fill="currentColor"
-          clipPath="url(#clip-2TtIpXVUXcFn)"
-          mask="url(#mask-BUDMbFsgInkO)"
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          className="fa-secondary2"
-        ></rect>
-      </svg>
-    ),
-    description: `Our organization is split into small teams 
-    that focus on delivering industry-specific 
-    technology services. The results include the 
-    right IT design based on your needs, efficient 
-    project implementation, and fast, personalized 
-    support.`
   }
 ];
-
+//  {
+//     title: "IT Services",
+//     link: "it-services",
+//     svg: (
+//       <svg
+//         aria-hidden="true"
+//         focusable="false"
+//         data-prefix="fas"
+//         data-icon="server"
+//         role="img"
+//         xmlns="http://www.w3.org/2000/svg"
+//         viewBox="0 0 448 512"
+//         className=" svg-inline--fa fa-server fa-w-14 fa-9x"
+//       >
+//         <defs>
+//           <clipPath id="clip-2TtIpXVUXcFn">
+//             <path
+//               fill="currentColor"
+//               d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
+//             ></path>
+//           </clipPath>
+//           <mask
+//             x="0"
+//             y="0"
+//             width="100%"
+//             height="100%"
+//             id="mask-BUDMbFsgInkO"
+//             maskUnits="userSpaceOnUse"
+//             maskContentUnits="userSpaceOnUse"
+//           >
+//             <rect
+//               x="0"
+//               y="0"
+//               width="100%"
+//               height="100%"
+//               fill="currentColor"
+//               className="fa-secondary2"
+//             ></rect>
+//             <g transform="translate(224 256)" className="fa-secondary">
+//               <g
+//                 transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)"
+//                 className="fa-secondary"
+//               >
+//                 <path
+//                   fill="currentColor"
+//                   d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"
+//                   transform="translate(-256 -256)"
+//                   className="fa-secondary"
+//                 ></path>
+//               </g>
+//             </g>
+//           </mask>
+//         </defs>
+//         <rect
+//           fill="currentColor"
+//           clipPath="url(#clip-2TtIpXVUXcFn)"
+//           mask="url(#mask-BUDMbFsgInkO)"
+//           x="0"
+//           y="0"
+//           width="100%"
+//           height="100%"
+//           className="fa-secondary2"
+//         ></rect>
+//       </svg>
+//     ),
+//     description: `Our organization is split into small teams
+//     that focus on delivering industry-specific
+//     technology services. The results include the
+//     right IT design based on your needs, efficient
+//     project implementation, and fast, personalized
+//     support.`
+//   }
 // {
 //   title: "E-Commerce",
 //   link: "e-commerce",
