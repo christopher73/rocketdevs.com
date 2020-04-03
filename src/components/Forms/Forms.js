@@ -47,9 +47,9 @@ export default function Forms() {
             <label className="form-label" htmlFor="tellus">
               Tell us about your project:
             </label>
-            <textarea type="text" className="form-textArea" />
+            <textarea type="text" className="form-textArea form-input" />
           </div>
-          <div style={{ width: "95%", margin: "auto" }}>
+          <div className="form-field">
             <input
               className="services-childrens-button"
               id="form-send-btn"

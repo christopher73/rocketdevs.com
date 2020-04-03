@@ -2,10 +2,11 @@ import React from "react";
 import PageContainer from "../../components/PageContainer/PageContainer";
 import { data } from "../../components/Services/servicesData";
 import Forms from "../../components/Forms/Forms";
-import "./styles.css";
-import webDesign from "../../assets/webDesign.jpg";
+
+import webDesign from "../../assets/img/webDesign.jpg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
+import "./styles.css";
 export default function Ecommerce() {
   const resultsData = [
     {

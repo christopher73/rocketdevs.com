@@ -2,10 +2,15 @@ import React from "react";
 import PageContainer from "../../components/PageContainer/PageContainer";
 import { data } from "../../components/Services/servicesData";
 import Forms from "../../components/Forms/Forms";
-import "./styles.css";
-import webDesign from "../../assets/webDesign.jpg";
+
+import webDesign from "../../assets/img/webDesign.jpg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
+import cwp from "../../assets/img/1.jpg";
+import wp from "../../assets/img/wp.png";
+import ec from "../../assets/img/ec.png";
+
+import "./styles.css";
 export default function WebDesign() {
   const resultsData = [
     {
@@ -165,6 +170,82 @@ export default function WebDesign() {
       description: "Downtime"
     }
   ];
+  const resultsData2 = [
+    {
+      title: "Custom Web Applications",
+      svg: (
+        <div
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            backgroundImage: `url(${cwp})`,
+            backgroundSize: "135% 100%",
+            backgroundPosition: "center",
+            marginTop: "20px",
+            borderRadius: "20px"
+          }}
+        />
+      ),
+      description: (
+        <p style={{ margin: 0, textAlign: "left" }}>
+          When off-the-shelf or out-of-the-box is not an option, e9digital's
+          NYC-based custom applications development team can take your idea and
+          turn into a plan; take that plan and turn into code; take that code
+          and turn it into a reality...in 90 days.
+          <br /> - Fabric search engine -
+          <br />- Encrypted file sharing app - <br />- Business lending portal -
+          <br />- Networking management app - <br />
+          Now that you've got the idea of what we can do...let us get your idea
+          done.
+        </p>
+      )
+    },
+
+    {
+      title: "WordPress Websites",
+      svg: (
+        <div
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            backgroundImage: `url(${wp})`,
+            backgroundSize: "220% 100%",
+            backgroundPosition: "center",
+            marginTop: "20px",
+            borderRadius: "20px"
+          }}
+        />
+      ),
+      description: `Don't hate the game; hate the player...or in this case, the inept web developer who created that crappy WordPress site. The reality is WordPress is a rock solid, content management system (CMS) that should be the foundation of most marketing websites. In fact, in the hands of capable web developers, like e9digital, there's virtually nothing that can't be done with it.
+
+      In the end, you shouldn't be choosing the web platform. You should be choosing the right web developer that will choose the right platform for you.`
+    },
+    {
+      title: "Ecommerce Websites",
+      svg: (
+        <div
+          style={{
+            minWidth: "100%",
+            minHeight: "100%",
+            backgroundImage: `url(${ec})`,
+            backgroundSize: "100% 100%",
+            backgroundPosition: "center",
+            marginTop: "20px",
+            borderRadius: "20px"
+          }}
+        />
+      ),
+      description: `Magento. Shopify. WooCommerce.
+
+      What do these terms mean? Money.
+      
+      The only question ... is the money coming in or going out?
+      
+      Choosing e9digital as your ecommerce web development team means that you will make one investment and then your ecommerce website project will be completed correctly, the first time.
+      
+      And then that leaves you only one problem: How are you going to spend your new found wealth?`
+    }
+  ];
   return (
     <PageContainer>
       <ScrollUp />
@@ -179,6 +260,15 @@ export default function WebDesign() {
           {data[0].description}
         </p>
       </div>
+      <div className="services-main-div">
+        {resultsData2.map((elem, i) =>
+          serviceDivChildren(elem, i, true, false)
+        )}
+      </div>
+      <h1 style={{ marginTop: "4rem" }} className="whoweare-h1">
+        {" "}
+        Check our numbers
+      </h1>
       <div className="services-main-div">
         {resultsData.map((elem, i) => serviceDivChildren(elem, i, true, false))}
       </div>

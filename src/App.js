@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing";
 import Logo from "./components/Logo/Logo";
-import Chat from "./components/Chat";
+// import Chat from "./components/Chat";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar";
 import Ecommerce from "./pages/Services/Ecommerce";
@@ -12,14 +12,16 @@ import ITservices from "./pages/Services/ITservices";
 import SEOservices from "./pages/Services/SEOservices";
 import SoftwareDev from "./pages/Services/SoftwareDev";
 import WebDesign from "./pages/Services/WebDesign";
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import "./assets/css/index.css";
 function App() {
   return (
     <React.Fragment>
       <Router>
         <Logo />
         <NavBar />
-        <Chat />
+        {/* <Chat /> */}
         <Footer />
         <Switch>
           <Route exact path="/" component={Landing} />
@@ -29,6 +31,8 @@ function App() {
           <Route path="/seo-services" component={SEOservices} />
           <Route path="/software-development" component={SoftwareDev} />
           <Route path="/web-design" component={WebDesign} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/terms-and-conditions" component={TermsAndConditions} />
         </Switch>
       </Router>
     </React.Fragment>

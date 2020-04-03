@@ -9,7 +9,7 @@
 .chat-bubble {
   position: relative;
   background: #658860a4;
-  border-radius: 0.6rem;
+  /* border-radius: 1rem 1rem 0rem 1rem; */
   /* box-shadow: 2px -2px 1px 1px rgba(78, 78, 78, 0.2); */
 }
 .chat-bubble-text {
@@ -25,7 +25,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 50%;
   width: 0;
   height: 0;
   border: 0.906em solid transparent;

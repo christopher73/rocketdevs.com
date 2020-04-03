@@ -8,10 +8,8 @@
   margin: -0.1em 0 0 0;
   padding: 1em;
   color: #eee;
-
   font-weight: 300;
 }
-
 .content h1 {
   margin-top: -1.3em;
   font-weight: 100;
@@ -62,11 +60,12 @@
 }
 .form-input {
   font-size: 20px;
-  padding: 10px 5px 10px 5px;
   min-width: 100%;
   margin-bottom: 10px;
   border-style: none;
   border-radius: 20px;
+  text-indent: 20px;
+  padding: 10px 0;
 }
 .form-textArea {
   resize: none;
@@ -75,12 +74,12 @@
   height: 100px;
   border-style: none;
   border-radius: 20px;
-  padding: 15px;
 }
 #form-send-btn {
   display: block;
   margin-top: 1.6rem;
   font-size: 1.7rem;
+  padding: 0.5rem !important;
 }
 .fa-primary2 {
   color: #a31947;
@@ -108,7 +107,6 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
-
 .wave {
   z-index: 3;
   opacity: 0.4;
@@ -124,7 +122,6 @@
   border-radius: 43%;
   animation: drift 5000ms infinite linear;
 }
-
 .box:after {
   content: "";
   display: block;
@@ -141,7 +138,6 @@
   z-index: 11;
   transform: translate3d(0, 0, 0);
 }
-
 @keyframes drift {
   from {
     transform: rotate(0deg);
@@ -150,7 +146,6 @@
     transform: rotate(360deg);
   }
 }
-
 .parallax > use {
   animation: move-forever 12s linear infinite;
 }
@@ -165,7 +160,6 @@
   animation-delay: -4s;
   animation-duration: 3s;
 }
-
 @keyframes move-forever {
   0% {
     transform: translate(-90px, 0%);
