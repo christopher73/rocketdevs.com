@@ -6,7 +6,7 @@ import der3 from "../../assets/img/der3.svg";
 
 export default function WhoWeAre() {
   return (
-    <div className="whoweare-div ">
+    <div style={{ paddingTop: "5.7rem" }} className="whoweare-div" id="about">
       <h1 className="whoweare-h1">
         Design <img className="img-svg" src={der2} alt="der2" />
         <br />

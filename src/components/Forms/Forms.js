@@ -1,55 +1,115 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./styles.css";
 import SvgWave from "./SvgWave";
 export default function Forms() {
+  const fileInput = useRef();
+  var formData = new FormData();
+  // formData.append(`file${index}`, file);
+  const [form, setForm] = useState({
+    customerFirstName: "",
+    customerLastName: "",
+    customerPhone: "",
+    customerCompany: "",
+    customerBudget: "",
+    customerAbout: "",
+    customerAttachment: "",
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(form);
+  }
+
   return (
     <SvgWave>
-      <div className="form-container">
+      <div id="get-a-quote-form" className="form-container">
         <h1 className="form-title">Get a Quote</h1>
-        <form className="form" action="/">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-field">
             <label className="form-label" htmlFor="name">
               Name:
             </label>
-            <input className="form-input" type="text" id="name" />
+            <input
+              // value={form.formValue.customerFirstName}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerFirstName: e.target.value,
+                })
+              }
+              className="form-input"
+              type="text"
+              id="name"
+            />
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="email">
               Email:
             </label>
-            <input className="form-input" type="text" id="email" />
+            <input
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerLastName: e.target.value,
+                })
+              }
+              // value={form.formValue.customerLastName}
+              className="form-input"
+              type="text"
+              id="email"
+            />
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="phone">
               Phone:
             </label>
-            <input className="form-input" type="text" id="phone" />
+            <input
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerPhone: e.target.value,
+                })
+              }
+              // value={form.formValue.customerPhone}
+              className="form-input"
+              type="text"
+              id="phone"
+            />
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="company">
               Company:
             </label>
-            <input className="form-input" type="text" id="company" />
+            <input
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerCompany: e.target.value,
+                })
+              }
+              // value={form.formValue.customerCompany}
+              className="form-input"
+              type="text"
+              id="company"
+            />
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="budget">
               Estimated Budget:
             </label>
-            <input className="form-input" type="text" id="company" />
-
-            {/* <select className="form-input" id="Budget">
-              <option value="">Select Range </option>
-              <option value="au">Australia</option>
-              <option value="ca">Canada</option>
-              <option value="usa">USA</option>
-            </select> */}
+            <input
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerBudget: e.target.value,
+                })
+              }
+              // value={form.formValue.customerBudget}
+              placeholder="$"
+              className="form-input"
+              type="number"
+              id="budget"
+            />
           </div>
-          {/* <div className="form-field">
-            <label className="form-label" htmlFor="document">
-              Document:
-            </label>
-            <input className="form-input" type="text" id="document" />
-          </div> */}
           <div className="form-field">
             <label className="form-label" htmlFor="tellus">
               Tell us about your project:
@@ -57,25 +117,34 @@ export default function Forms() {
             <textarea
               id="tellus"
               name="tellus"
-              placeholder="..."
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerAbout: e.target.value,
+                })
+              }
+              // value={form.formValue.customerAbout}
+              // placeholder="..."
               type="text"
               className="form-textArea form-input"
             />
           </div>{" "}
           <div className="form-field ">
-            <label className="form-label" for="file">
-              Attach an RFP
-            </label>
+            {" "}
+            <label htmlFor="file">Attach an RFP</label>
             <input
-              style={{
-                padding: "1%",
-                // paddingRight: "0px",
-                width: "98%",
-                borderRadius: ".7rem",
-                backgroundColor: "#ff7e9e"
-              }}
-              // className="services-childrens-button"
+              // value={form.formValue.customerAttachment}
+              ref={fileInput}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerAttachment: fileInput.current.files[0],
+                })
+              }
+              className="input-file"
               type="file"
+              name="file"
+              id="file"
               accept=".doc, .docx,.ppt, .pptx,.txt,.pdf"
             />
           </div>
@@ -84,7 +153,7 @@ export default function Forms() {
               className="services-childrens-button"
               id="form-send-btn"
               type="submit"
-              value=" SEND "
+              value={"    SEND    "}
             />
           </div>
         </form>

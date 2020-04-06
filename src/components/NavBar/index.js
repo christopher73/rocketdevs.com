@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./styles.css";
 import NavBar from "./NavBar";
-export default function() {
+export default function () {
   const bgIcon = useRef(null);
   // const navDiv = useRef(null);
   const [show, setShow] = useState(false);
@@ -14,7 +14,7 @@ export default function() {
   }
 
   useEffect(() => {
-    const onScroll = e => {
+    const onScroll = (e) => {
       setScrollTop(e.target.documentElement.scrollTop);
       setScrolling(e.target.documentElement.scrollTop > scrollTop);
     };
@@ -23,7 +23,7 @@ export default function() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
-  console.log(scrolling);
+  // console.log(scrolling);
 
   return (
     <div
@@ -62,7 +62,7 @@ export default function() {
         <div className="bar2" />
         <div className="bar3" />
       </div>
-      {show ? <NavBar /> : null}
+      {show ? <NavBar show={toggle} /> : null}
     </div>
   );
 }

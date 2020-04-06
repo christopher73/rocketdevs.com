@@ -1,0 +1,83 @@
+@media all and (max-width: 519px) {
+  .main-div1-h1 {
+    font-size: 2rem !important;
+  }
+  .form-title {
+    font-size: 2rem !important;
+  }
+  #main-chat {
+    margin-right: 0;
+    display: none;
+  }
+  .burger-icon {
+    top: 0.5rem !important;
+    right: 1rem !important;
+  }
+  .phone-num-svg-num {
+    display: none;
+  }
+  #main-logo h1 {
+    font-size: 1.2rem !important;
+  }
+  .container-header {
+    height: 40vh !important;
+  }
+  .whoweare-div,
+  .whoweare-h1,
+  .services-main-title,
+  .services-main-div,
+  .services-childrens-div {
+    margin: auto !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 0 !important;
+    width: 90% !important;
+    text-align: center !important;
+  }
+  .services-main-container {
+    margin: 0 !important;
+  }
+  .privacy-policy {
+    font-size: small;
+    padding: 4rem 0.7rem !important;
+  }
+  .services-childrens-p,
+  .whoweare-div p {
+    font-size: 0.9rem !important;
+  }
+  .whoweare-h1,
+  .services-main-title {
+    font-size: 1.8rem !important;
+  }
+  .whoweare-h1 img {
+    width: 30px;
+  }
+  .services-childrens-button {
+    width: 80% !important;
+    font-size: 0.7rem !important;
+  }
+  .form-label {
+    padding: 2px 0 !important;
+    font-size: 0.8rem !important;
+  }
+  #form-send-btn {
+    font-size: 1.4rem !important;
+    width: 100% !important;
+    margin: 1.6 0 rem !important;
+  }
+  .title {
+    font-size: 1.4rem !important;
+  }
+  .phone-num-div {
+    margin-right: 6rem !important;
+    margin-top: 0.6rem !important;
+  }
+  .hide {
+    height: 3rem !important;
+  }
+  .footer-div-link,
+  .footer-div-text {
+    font-size: 0.7rem !important;
+    margin: 7px auto !important;
+  }
+}
