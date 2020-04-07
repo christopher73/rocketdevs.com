@@ -5,14 +5,14 @@ import "./styles.css";
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 40,
   (x - window.innerWidth / 2) / 40,
-  1
+  1,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
-export default function(service, i, desc, btn) {
+export default function (service, i, desc, btn) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 80, tension: 350, friction: 40 }
+    config: { mass: 80, tension: 350, friction: 40 },
   }));
 
   return (
@@ -26,7 +26,7 @@ export default function(service, i, desc, btn) {
       <div className="services-svg">{service.svg}</div>
       <h1 className="services-h1">{service.title}</h1>
       {desc ? (
-        <p className="services-childrens-p">{service.description}</p>
+        <div className="services-childrens-p">{service.description}</div>
       ) : null}
       {btn ? (
         <Link className="services-childrens-button" to={service.link}>

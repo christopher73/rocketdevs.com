@@ -1,13 +1,13 @@
 .footer-container {
   font-size: small;
   /* margin-top: auto; */
-  width: 100vw;
+  min-width: 100%;
 }
 .footer-logo {
   text-align: center;
   color: white;
   background-color: #ef0d33;
-  width: 120px;
+  width: 170px;
   padding: 5px;
   margin: auto;
 }

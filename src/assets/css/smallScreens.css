@@ -10,14 +10,21 @@
     display: none;
   }
   .burger-icon {
-    top: 0.5rem !important;
+    top: 0.2rem !important;
     right: 1rem !important;
   }
   .phone-num-svg-num {
     display: none;
   }
-  #main-logo h1 {
-    font-size: 1.2rem !important;
+  #main-logo {
+    left: 1rem;
+    top: 1rem;
+    font-size: 0.5rem !important;
+  }
+  .phone-num-div {
+    margin-right: 5rem !important;
+    margin-top: 1.3rem !important;
+    height: 100% !important;
   }
   .container-header {
     height: 40vh !important;
@@ -68,10 +75,9 @@
   .title {
     font-size: 1.4rem !important;
   }
-  .phone-num-div {
-    margin-right: 6rem !important;
-    margin-top: 0.6rem !important;
-  }
+  /* .phone-num-div {
+    
+  } */
   .hide {
     height: 3rem !important;
   }

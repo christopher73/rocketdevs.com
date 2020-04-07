@@ -187,7 +187,7 @@ export default function WebDesign() {
         />
       ),
       description: (
-        <p style={{ margin: 0, textAlign: "left" }}>
+        <h4 style={{ margin: 0, textAlign: "left" }}>
           When off-the-shelf or out-of-the-box is not an option, RocketDevs's
           NYC-based custom applications development team can take your idea and
           turn into a plan; take that plan and turn into code; take that code
@@ -199,7 +199,7 @@ export default function WebDesign() {
           <br />
           Now that you've got the idea of what we can do...let us get your idea
           done.
-        </p>
+        </h4>
       ),
     },
 

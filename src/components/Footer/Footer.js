@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 export default function Footer({ hideLogo, hideText }) {
   return (
     <div className="footer-container">
-      {!hideLogo ? <div className="footer-logo">RocketDevs</div> : null}
+      {!hideLogo ? (
+        <h1 className="footer-logo">
+          RocketDevs
+          <span style={{ fontSize: "10px", verticalAlign: "text-top" }}>
+            &#9415;
+          </span>
+        </h1>
+      ) : null}
       {!hideText ? (
         <>
           <div className="footer-div-link">

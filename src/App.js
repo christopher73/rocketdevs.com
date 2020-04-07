@@ -16,8 +16,9 @@ export default function App() {
   return (
     <React.Fragment>
       <Router>
-        <Logo />
         <NavBar />
+        <Logo />
+
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/integration-modernization" component={IntAndMod} />
