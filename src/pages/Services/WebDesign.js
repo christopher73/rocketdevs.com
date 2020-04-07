@@ -37,7 +37,7 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "Conversion Rates"
+      description: "Conversion Rates",
     },
     {
       title: "+3.6%",
@@ -63,7 +63,7 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "Average Order Value"
+      description: "Average Order Value",
     },
     {
       title: "+33%",
@@ -89,7 +89,7 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "Mobile Revenue"
+      description: "Mobile Revenue",
     },
     {
       title: "-6%",
@@ -115,7 +115,7 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "Shopping Rate Abandonment Rate"
+      description: "Shopping Rate Abandonment Rate",
     },
     {
       title: "-62%",
@@ -141,7 +141,7 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "New Content Creation Cost"
+      description: "New Content Creation Cost",
     },
     {
       title: "-93%",
@@ -167,8 +167,8 @@ export default function WebDesign() {
           </div>
         </div>
       ),
-      description: "Downtime"
-    }
+      description: "Downtime",
+    },
   ];
   const resultsData2 = [
     {
@@ -182,7 +182,7 @@ export default function WebDesign() {
             backgroundSize: "135% 100%",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
@@ -200,7 +200,7 @@ export default function WebDesign() {
           Now that you've got the idea of what we can do...let us get your idea
           done.
         </p>
-      )
+      ),
     },
 
     {
@@ -214,13 +214,13 @@ export default function WebDesign() {
             backgroundSize: "220% 100%",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
       description: `Don't hate the game; hate the player...or in this case, the inept web developer who created that crappy WordPress site. The reality is WordPress is a rock solid, content management system (CMS) that should be the foundation of most marketing websites. In fact, in the hands of capable web developers, like RocketDevs, there's virtually nothing that can't be done with it.
 
-      In the end, you shouldn't be choosing the web platform. You should be choosing the right web developer that will choose the right platform for you.`
+      In the end, you shouldn't be choosing the web platform. You should be choosing the right web developer that will choose the right platform for you.`,
     },
     {
       title: "Ecommerce Websites",
@@ -233,7 +233,7 @@ export default function WebDesign() {
             backgroundSize: "100% 100%",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
@@ -245,8 +245,8 @@ export default function WebDesign() {
       
       Choosing RocketDevs as your ecommerce web development team means that you will make one investment and then your ecommerce website project will be completed correctly, the first time.
       
-      And then that leaves you only one problem: How are you going to spend your new found wealth?`
-    }
+      And then that leaves you only one problem: How are you going to spend your new found wealth?`,
+    },
   ];
   return (
     <PageContainer>
@@ -258,9 +258,9 @@ export default function WebDesign() {
         <h1 className="title">{data[0].title}</h1>
       </div>
       <div className="whoweare-div">
-        <p style={{ textAlign: "center", paddingTop: 40 }}>
+        <div style={{ textAlign: "center", paddingTop: 40 }}>
           {data[0].description}
-        </p>
+        </div>
       </div>
       <div className="services-main-div">
         {resultsData2.map((elem, i) =>

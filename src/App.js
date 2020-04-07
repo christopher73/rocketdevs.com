@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Logo from "./components/Logo/Logo";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer/Footer";
 import IntAndMod from "./pages/Services/IntAndMod";
 import SEOservices from "./pages/Services/SEOservices";
 import SoftwareDev from "./pages/Services/SoftwareDev";
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/terms-and-conditions" component={TermsAndConditions} />
         </Switch>
+        <Footer hideLogo={true} hideText={false} />
       </Router>
     </React.Fragment>
   );

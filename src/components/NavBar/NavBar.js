@@ -2,10 +2,57 @@ import React from "react";
 // import DarkMode from "../DarkMode/DarkMode";
 import Footer from "../Footer/Footer";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 export default function NavBar(props) {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link to="/" onClick={() => props.show()} className="nav-link">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="home"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              className="svg-inline--fa fa-home fa-w-18 fa-2x"
+            >
+              <path
+                fill="currentColor"
+                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                className="fa-primary"
+              ></path>
+            </svg>
+            <span className="link-text">Home</span>
+          </Link>
+        </li>{" "}
+        <li className="nav-item">
+          <Link
+            to="/portfolio"
+            onClick={() => props.show()}
+            className="nav-link"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="flipboard"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="svg-inline--fa fa-flipboard fa-w-14 fa-2x"
+            >
+              <path
+                fill="currentColor"
+                d="M0 32v448h448V32H0zm358.4 179.2h-89.6v89.6h-89.6v89.6H89.6V121.6h268.8v89.6z"
+                className="fa-primary"
+              ></path>
+            </svg>
+            <span className="link-text">Porfolio</span>
+          </Link>
+        </li>{" "}
         <li className="nav-item">
           <HashLink
             to="/#services"
@@ -40,70 +87,6 @@ export default function NavBar(props) {
         </li>
         <li className="nav-item">
           <HashLink
-            to="/#get-a-quote-form"
-            onClick={() => props.show()}
-            className="nav-link"
-          >
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fad"
-              data-icon="lightbulb-on"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 512"
-              className="svg-inline--fa fa-lightbulb-on fa-w-20 fa-3x"
-            >
-              <g className="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M319.45,0C217.44.31,144,83,144,176a175,175,0,0,0,43.56,115.78c16.52,18.85,42.36,58.22,52.21,91.44,0,.28.07.53.11.78H400.12c0-.25.07-.5.11-.78,9.85-33.22,35.69-72.59,52.21-91.44A175,175,0,0,0,496,176C496,78.63,416.91-.31,319.45,0ZM320,96a80.09,80.09,0,0,0-80,80,16,16,0,0,1-32,0A112.12,112.12,0,0,1,320,64a16,16,0,0,1,0,32Z"
-                  className="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M240.06,454.34A32,32,0,0,0,245.42,472l17.1,25.69c5.23,7.91,17.17,14.28,26.64,14.28h61.7c9.47,0,21.41-6.37,26.64-14.28L394.59,472A37.47,37.47,0,0,0,400,454.34L400,416H240ZM112,192a24,24,0,0,0-24-24H24a24,24,0,0,0,0,48H88A24,24,0,0,0,112,192Zm504-24H552a24,24,0,0,0,0,48h64a24,24,0,0,0,0-48ZM131.08,55.22l-55.42-32a24,24,0,1,0-24,41.56l55.42,32a24,24,0,1,0,24-41.56Zm457.26,264-55.42-32a24,24,0,1,0-24,41.56l55.42,32a24,24,0,0,0,24-41.56Zm-481.26-32-55.42,32a24,24,0,1,0,24,41.56l55.42-32a24,24,0,0,0-24-41.56ZM520.94,100a23.8,23.8,0,0,0,12-3.22l55.42-32a24,24,0,0,0-24-41.56l-55.42,32a24,24,0,0,0,12,44.78Z"
-                  className="fa-primary"
-                ></path>
-              </g>
-            </svg>
-            <span className="link-text">Porfolio</span>
-          </HashLink>
-        </li>{" "}
-        <li className="nav-item">
-          <HashLink
-            to="/#get-a-quote-form"
-            onClick={() => props.show()}
-            className="nav-link"
-          >
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fad"
-              data-icon="address-book"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="svg-inline--fa fa-address-book fa-w-14 fa-fw fa-lg"
-            >
-              <g className="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M416 48a48 48 0 0 0-48-48H48A48 48 0 0 0 0 48v416a48 48 0 0 0 48 48h320a48 48 0 0 0 48-48zm-208 80a64 64 0 1 1-64 64 64.06 64.06 0 0 1 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5a103 103 0 0 0 79.6 0h5c37.1 0 67.2 25.8 67.2 57.6z"
-                  className="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M252.8 288h-5a103 103 0 0 1-79.6 0h-5c-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6zM208 256a64 64 0 1 0-64-64 64.06 64.06 0 0 0 64 64zm228-32h-20v64h20a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0 128h-20v64h20a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12zm0-256h-20v64h20a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12z"
-                  className="fa-primary"
-                ></path>
-              </g>
-            </svg>
-            <span className="link-text">Get a Quote</span>
-          </HashLink>
-        </li>
-        <li className="nav-item">
-          <HashLink
             to="/#about"
             onClick={() => props.show()}
             className="nav-link"
@@ -111,31 +94,74 @@ export default function NavBar(props) {
             <svg
               aria-hidden="true"
               focusable="false"
-              data-prefix="fad"
+              data-prefix="fas"
               data-icon="info-circle"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="svg-inline--fa fa-info-circle fa-w-16 fa-lg"
+              className="svg-inline--fa fa-info-circle fa-w-16 fa-2x"
             >
-              <g className="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M256 8C119 8 8 119.08 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 110a42 42 0 1 1-42 42 42 42 0 0 1 42-42zm56 254a12 12 0 0 1-12 12h-88a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h12v-64h-12a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h64a12 12 0 0 1 12 12v100h12a12 12 0 0 1 12 12z"
-                  className="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M256 202a42 42 0 1 0-42-42 42 42 0 0 0 42 42zm44 134h-12V236a12 12 0 0 0-12-12h-64a12 12 0 0 0-12 12v24a12 12 0 0 0 12 12h12v64h-12a12 12 0 0 0-12 12v24a12 12 0 0 0 12 12h88a12 12 0 0 0 12-12v-24a12 12 0 0 0-12-12z"
-                  className="fa-primary"
-                ></path>
-              </g>
+              <path
+                fill="currentColor"
+                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                className="fa-primary"
+              ></path>
             </svg>
-            <span className="link-text">About</span>
+            <span className="link-text">About Us</span>
           </HashLink>
         </li>{" "}
+        <li className="nav-item">
+          <Link
+            to="/resources"
+            onClick={() => props.show()}
+            className="nav-link"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chalkboard-teacher"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              className="svg-inline--fa fa-chalkboard-teacher fa-w-20 fa-2x"
+            >
+              <path
+                fill="currentColor"
+                d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"
+                className="fa-primary"
+              ></path>
+            </svg>
+            <span className="link-text">Resources</span>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <HashLink
+            to="/#get-a-quote-form"
+            onClick={() => props.show()}
+            className="nav-link"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="clipboard-check"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              className="svg-inline--fa fa-clipboard-check fa-w-12 fa-2x"
+            >
+              <path
+                fill="currentColor"
+                d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm121.2 231.8l-143 141.8c-4.7 4.7-12.3 4.6-17-.1l-82.6-83.3c-4.7-4.7-4.6-12.3.1-17L99.1 285c4.7-4.7 12.3-4.6 17 .1l46 46.4 106-105.2c4.7-4.7 12.3-4.6 17 .1l28.2 28.4c4.7 4.8 4.6 12.3-.1 17z"
+                className="fa-primary"
+              ></path>
+            </svg>
+            <span className="link-text">Get a Quote</span>
+          </HashLink>
+        </li>
         <div style={{ marginTop: "10%" }}>
-          <Footer hideLogo={true} />
+          <Footer hideLogo={false} hideText={true} />
         </div>
       </ul>
     </nav>
