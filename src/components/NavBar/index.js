@@ -29,7 +29,7 @@ export default function () {
     <div
       className={`nav-bar-container
        ${show ? "show" : "hide"} 
-       ${!scrollTop ? "bgOff" : "bgOn"} `}
+       bgOn `}
     >
       {show ? null : (
         <div className="phone-num-div">

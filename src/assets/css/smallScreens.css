@@ -1,4 +1,26 @@
 @media all and (max-width: 519px) {
+  .nav-bar-container {
+    top: 5% !important;
+    width: 100px !important;
+  }
+  .burger-icon {
+    top: 5.5%;
+    right: 10px;
+    margin: 0;
+  }
+  .hide {
+    height: 3rem !important;
+  }
+  .show {
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .phone-num-div {
+    margin-right: 60% !important;
+    margin-top: 1.3rem !important;
+    height: 100% !important;
+  }
   .main-div1-h1 {
     font-size: 2rem !important;
   }
@@ -9,23 +31,17 @@
     margin-right: 0;
     display: none;
   }
-  .burger-icon {
-    top: 0.2rem !important;
-    right: 1rem !important;
-  }
+
   .phone-num-svg-num {
     display: none;
   }
   #main-logo {
-    left: 1rem;
-    top: 1rem;
-    font-size: 0.5rem !important;
+    left: -55px;
+    /*  top: 10%; */
+    font-size: 0.6rem !important;
+    /* position: absolute !important; */
   }
-  .phone-num-div {
-    margin-right: 5rem !important;
-    margin-top: 1.3rem !important;
-    height: 100% !important;
-  }
+
   .container-header {
     height: 40vh !important;
   }
@@ -78,9 +94,7 @@
   /* .phone-num-div {
     
   } */
-  .hide {
-    height: 3rem !important;
-  }
+
   .footer-div-link,
   .footer-div-text {
     font-size: 0.7rem !important;

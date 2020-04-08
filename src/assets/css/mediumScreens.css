@@ -6,9 +6,13 @@
     margin-right: 8rem !important;
     /* margin-top: 1rem !important; */
   }
+  .nav-bar-container {
+    top: 5% !important;
+    width: 200px !important;
+  }
   #main-logo {
-    left: 1.5rem;
-    top: 1.5rem;
+    left: -60px !important;
+    /* top: 1.5rem; */
     font-size: 0.7rem !important;
   }
   .title {
