@@ -26,7 +26,7 @@ export default function LandingContainer(props) {
       <main className="main">
         <div className="main-div">
           <div className="main-div1">
-            <Logo></Logo>
+            <Logo />
             <FbChat />
             <h1 className="main-div1-h1">
               {one.result} <br />

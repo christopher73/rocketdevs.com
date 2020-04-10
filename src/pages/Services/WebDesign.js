@@ -2,7 +2,7 @@ import React from "react";
 import PageContainer from "../../components/PageContainer/PageContainer";
 import { data } from "../../components/Services/servicesData";
 import Forms from "../../components/Forms/Forms";
-
+import Logo from "../../components/Logo/Logo";
 import webDesign from "../../assets/img/webDesign.jpg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
@@ -17,6 +17,7 @@ export default function WebDesign() {
       title: "+20%",
       svg: (
         <div className="web-design-div">
+          {" "}
           <div className="web-design-div-svg">
             <svg
               aria-hidden="true"
@@ -251,6 +252,7 @@ export default function WebDesign() {
   return (
     <PageContainer>
       <ScrollUp />
+      <Logo />
       <div
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"

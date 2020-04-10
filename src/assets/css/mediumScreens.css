@@ -55,4 +55,21 @@
     font-size: 1.4rem !important;
     width: 100% !important;
   }
+  /* ***************new changes to landing***************  */
+  .whoweare-div-new {
+    flex-direction: column;
+  }
+  .about-me-right {
+    width: 100%;
+  }
+  .about-me-left {
+    text-align: center;
+    min-width: 98%;
+    padding: 1%;
+    font-size: smaller;
+  }
+  .about-me-left p {
+    font-size: smaller;
+  }
+  /* *****************************************************  */
 }

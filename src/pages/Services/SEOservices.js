@@ -7,28 +7,30 @@ import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import ProgressAnimation from "../../components/ProgressAnimation/ProgressAnimation";
 import "./styles.css";
+import Logo from "../../components/Logo/Logo";
 
 export default function SEOservices() {
   const resultsData = [
     {
       title: "of online experiences begin with a search engine",
       svg: <ProgressAnimation percentageNum="93" />,
-      description: ""
+      description: "",
     },
     {
       title: "of people never scroll past the first page of results",
       svg: <ProgressAnimation percentageNum="75" />,
-      description: ""
+      description: "",
     },
     {
       title: "of users research a product before making a purchase",
       svg: <ProgressAnimation percentageNum="61" />,
-      description: ""
-    }
+      description: "",
+    },
   ];
   return (
     <PageContainer>
       <ScrollUp />
+      <Logo />
       <div
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"

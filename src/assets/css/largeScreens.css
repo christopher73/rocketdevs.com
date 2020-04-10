@@ -6,12 +6,15 @@
     width: 100% !important;
     justify-content: center !important;
   }
+  .whoweare-div-new {
+    width: 70%;
+  }
   .services-childrens-div {
-    width: 30% !important;
+    width: 40% !important;
     margin: 20px !important;
   }
   .services-childrens-p {
-    font-size: medium;
+    font-size: small;
   }
   .navbar {
     top: 0;
@@ -38,6 +41,9 @@
   /* .services-childrens-button {
     width: 30% !important;
   } */
+  .whoweare-div-new {
+    width: 70%;
+  }
   .services-main-div {
     width: 75vw !important;
   }

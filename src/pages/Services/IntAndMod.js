@@ -4,7 +4,7 @@ import { data } from "../../components/Services/servicesData";
 import Forms from "../../components/Forms/Forms";
 import webDesign from "../../assets/img/webDesign.jpg";
 import aws from "../../assets/img/aws.svg";
-
+import Logo from "../../components/Logo/Logo";
 import docker from "../../assets/img/docker.svg";
 import google from "../../assets/img/google.svg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
@@ -18,18 +18,18 @@ export default function IntAndMod() {
       title:
         "Drive growth, retire legacy investments and improve your financial posture",
       svg: <ProgressAnimation percentageNum="93" />,
-      description: ""
+      description: "",
     },
     {
       title: "Accelerate your migration to the cloud with a trusted provider",
       svg: <ProgressAnimation percentageNum="75" />,
-      description: ""
+      description: "",
     },
     {
       title: "Maximize the value of your existing investments",
       svg: <ProgressAnimation percentageNum="61" />,
-      description: ""
-    }
+      description: "",
+    },
   ];
   const resultsData2 = [
     {
@@ -37,7 +37,7 @@ export default function IntAndMod() {
       svg: (
         <img style={{ width: "150px", height: "150px" }} src={aws} alt="der2" />
       ),
-      description: ""
+      description: "",
     },
     {
       title: "Docker Containers",
@@ -48,7 +48,7 @@ export default function IntAndMod() {
           alt="der2"
         />
       ),
-      description: ""
+      description: "",
     },
     {
       title: "Google Cloud services",
@@ -59,13 +59,14 @@ export default function IntAndMod() {
           alt="der2"
         />
       ),
-      description: ""
-    }
+      description: "",
+    },
   ];
 
   return (
     <PageContainer>
       <ScrollUp />
+      <Logo />
       <div
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"

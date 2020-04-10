@@ -2,7 +2,7 @@ import React from "react";
 import PageContainer from "../../components/PageContainer/PageContainer";
 import { data } from "../../components/Services/servicesData";
 import Forms from "../../components/Forms/Forms";
-
+import Logo from "../../components/Logo/Logo";
 import webDesign from "../../assets/img/webDesign.jpg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
@@ -33,7 +33,7 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "Conversion Rates"
+      description: "Conversion Rates",
     },
     {
       title: "+3.6%",
@@ -59,7 +59,7 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "Average Order Value"
+      description: "Average Order Value",
     },
     {
       title: "+33%",
@@ -85,7 +85,7 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "Mobile Revenue"
+      description: "Mobile Revenue",
     },
     {
       title: "-6%",
@@ -111,7 +111,7 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "Shopping Rate Abandonment Rate"
+      description: "Shopping Rate Abandonment Rate",
     },
     {
       title: "-62%",
@@ -137,7 +137,7 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "New Content Creation Cost"
+      description: "New Content Creation Cost",
     },
     {
       title: "-93%",
@@ -163,8 +163,8 @@ export default function Ecommerce() {
           </div>
         </div>
       ),
-      description: "Downtime"
-    }
+      description: "Downtime",
+    },
   ];
   return (
     <PageContainer>

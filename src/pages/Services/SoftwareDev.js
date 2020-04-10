@@ -9,6 +9,7 @@ import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import iphone from "../../assets/img/iphone.png";
 import android from "../../assets/img/android.png";
 import cross from "../../assets/img/cross.png";
+import Logo from "../../components/Logo/Logo";
 
 export default function SoftwareDev() {
   const resultsData = [
@@ -23,12 +24,12 @@ export default function SoftwareDev() {
             backgroundSize: "100% 100%",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
       description:
-        "Impressive UI and best UX form the crux of all iOS apps. Our tech-savvy developers and experts keep themselves updated on the latest trends and changes in iOS development. We start the process with thorough research and planning and then systematically design, develop, and test the mobile app. We take the complete responsibility of our clients’ iOS apps from development to app submission and approval."
+        "Impressive UI and best UX form the crux of all iOS apps. Our tech-savvy developers and experts keep themselves updated on the latest trends and changes in iOS development. We start the process with thorough research and planning and then systematically design, develop, and test the mobile app. We take the complete responsibility of our clients’ iOS apps from development to app submission and approval.",
     },
     {
       title: "Android App Development",
@@ -42,12 +43,12 @@ export default function SoftwareDev() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
       description:
-        "We offer intuitive app development and ensure the best user experience. We do not confine our responsibility to app development for our clients but take it a step ahead to marketing and PR and help their business grow. Our clients get the option to select from multiple marketing packages based on their budget."
+        "We offer intuitive app development and ensure the best user experience. We do not confine our responsibility to app development for our clients but take it a step ahead to marketing and PR and help their business grow. Our clients get the option to select from multiple marketing packages based on their budget.",
     },
     {
       title: "Cross-platform App Development",
@@ -60,17 +61,18 @@ export default function SoftwareDev() {
             backgroundSize: "135% 100%",
             backgroundPosition: "center",
             marginTop: "20px",
-            borderRadius: "20px"
+            borderRadius: "20px",
           }}
         />
       ),
       description:
-        " We offer cross-platform app development for its benefits of lower cost, time effectiveness, and uniformity. Once they hire us, our clients can be sure of getting user-friendly mobile apps with attractive UI, and excellent UX. After the launch, we also provide support and maintenance as needed to help our clients’ business grow hassle-free."
-    }
+        " We offer cross-platform app development for its benefits of lower cost, time effectiveness, and uniformity. Once they hire us, our clients can be sure of getting user-friendly mobile apps with attractive UI, and excellent UX. After the launch, we also provide support and maintenance as needed to help our clients’ business grow hassle-free.",
+    },
   ];
   return (
     <PageContainer>
       <ScrollUp />
+      <Logo />
       <div
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"

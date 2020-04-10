@@ -34,11 +34,11 @@
   margin-right: 1rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  border: 0.5rem solid white;
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 0.5rem solid white;
 }
 
 .services-svg {
@@ -59,7 +59,7 @@
   color: #7f7fd6;
   margin-bottom: 1rem;
   line-height: 1.85;
-  font-size: 1.2rem;
+  font-size: medium;
   display: block;
   text-align: center;
 }

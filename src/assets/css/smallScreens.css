@@ -24,6 +24,23 @@
   .main-div1-h1 {
     font-size: 2rem !important;
   }
+  /* ***************new changes to landing***************  */
+  .whoweare-div-new {
+    flex-direction: column;
+  }
+  .about-me-right {
+    width: 100%;
+  }
+  .about-me-left {
+    text-align: center;
+    min-width: 98%;
+    padding: 1%;
+    font-size: smaller;
+  }
+  .about-me-left p {
+    font-size: smaller;
+  }
+  /* *****************************************************  */
   .form-title {
     font-size: 2rem !important;
   }
@@ -31,7 +48,6 @@
     margin-right: 0;
     display: none;
   }
-
   .phone-num-svg-num {
     display: none;
   }
@@ -66,7 +82,7 @@
   }
   .services-childrens-p,
   .whoweare-div p {
-    font-size: 0.9rem !important;
+    font-size: small !important;
   }
   .whoweare-h1,
   .services-main-title {
