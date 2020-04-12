@@ -1,13 +1,19 @@
 import React, { useState, useRef } from "react";
 import "./styles.css";
 import SvgWave from "./SvgWave";
+import axios from "axios";
+//const URL = "https://api.c-fajardo.com/forms/quote";
+const URLD = "http://127.0.0.1:5000/api/form/rocketdevs/quote";
+
 export default function Forms() {
   const fileInput = useRef();
-  var formData = new FormData();
+  // var formData = new FormData();
   // formData.append(`file${index}`, file);
+  const [formStatus, setformStatus] = useState(0);
   const [form, setForm] = useState({
     customerFirstName: "",
     customerLastName: "",
+    customerEmail: "",
     customerPhone: "",
     customerCompany: "",
     customerBudget: "",
@@ -15,14 +21,27 @@ export default function Forms() {
     customerAttachment: "",
   });
   function handleSubmit(e) {
-    e.preventDefault();
+    setformStatus(1);
     console.log(form);
+    e.preventDefault();
+    axios
+      .post(URLD, form)
+      .then((res) => {
+        setformStatus(2);
+        console.log(res);
+        // this.setState({ sent: true }, this.resetForm());
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log("Message not sent");
+      });
   }
 
   return (
     <SvgWave>
       <div id="get-a-quote-form" className="form-container">
         <h1 className="form-title">Get a Quote</h1>
+        {/*----------Form---------*/}
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-field">
             <label className="form-label" htmlFor="name">
@@ -40,6 +59,23 @@ export default function Forms() {
               type="text"
               id="name"
             />
+          </div>{" "}
+          <div className="form-field">
+            <label className="form-label" htmlFor="lastname">
+              Last Name:
+            </label>
+            <input
+              // value={form.formValue.customerFirstName}
+              onChange={(e) =>
+                setForm({
+                  ...form,
+                  customerLastName: e.target.value,
+                })
+              }
+              className="form-input"
+              type="text"
+              id="lastname"
+            />
           </div>
           <div className="form-field">
             <label className="form-label" htmlFor="email">
@@ -49,7 +85,7 @@ export default function Forms() {
               onChange={(e) =>
                 setForm({
                   ...form,
-                  customerLastName: e.target.value,
+                  customerEmail: e.target.value,
                 })
               }
               // value={form.formValue.customerLastName}
