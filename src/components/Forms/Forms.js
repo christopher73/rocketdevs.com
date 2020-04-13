@@ -2,14 +2,21 @@ import React, { useState, useRef } from "react";
 import "./styles.css";
 import SvgWave from "./SvgWave";
 import axios from "axios";
+import FormDiv from "./FormDiv";
 //const URL = "https://api.c-fajardo.com/forms/quote";
 const URLD = "http://127.0.0.1:5000/api/form/rocketdevs/quote";
 
 export default function Forms() {
-  const fileInput = useRef();
   // var formData = new FormData();
   // formData.append(`file${index}`, file);
   const [formStatus, setformStatus] = useState(0);
+  /***
+   * Form status
+   * 0 no action
+   * 1 sending
+   * 2 sent
+   * 3 error
+   */
   const [form, setForm] = useState({
     customerFirstName: "",
     customerLastName: "",
@@ -20,179 +27,81 @@ export default function Forms() {
     customerAbout: "",
     customerAttachment: "",
   });
+  console.log(
+    "form status : " + formStatus + "\nform data : " + JSON.stringify(form)
+  );
+
   function handleSubmit(e) {
-    setformStatus(1);
-    console.log(form);
     e.preventDefault();
+    setformStatus(1);
+
+    console.log(
+      "FN => form status : " +
+        formStatus +
+        "\nform data : " +
+        JSON.stringify(form)
+    );
+    //console.log(form);
     axios
       .post(URLD, form)
       .then((res) => {
         setformStatus(2);
+        console.log("form status " + formStatus);
         console.log(res);
         // this.setState({ sent: true }, this.resetForm());
       })
       .catch((err) => {
         console.log(err);
+        setformStatus(3);
         console.log("Message not sent");
       });
   }
+  const tryAgain = (
+    <div>
+      <div style={{ width: "200px", margin: "auto" }}>
+        {" "}
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="check-circle"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="svg-inline--fa fa-check-circle fa-w-16 fa-7x"
+        >
+          <path
+            fill="currentColor"
+            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+            class=""
+          ></path>
+        </svg>
+      </div>
+      <h3 style={{ paddingBottom: "30px", margin: "auto" }}>SENT !</h3>
+
+      <button
+        className="services-childrens-button"
+        onClick={() => {
+          setformStatus(0);
+        }}
+      >
+        Send another Quote
+      </button>
+    </div>
+  );
+  const isLoading = <h1 style={{ color: "white" }}>LOADING ...</h1>;
 
   return (
     <SvgWave>
       <div id="get-a-quote-form" className="form-container">
         <h1 className="form-title">Get a Quote</h1>
-        {/*----------Form---------*/}
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="form-field">
-            <label className="form-label" htmlFor="name">
-              Name:
-            </label>
-            <input
-              // value={form.formValue.customerFirstName}
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerFirstName: e.target.value,
-                })
-              }
-              className="form-input"
-              type="text"
-              id="name"
-            />
-          </div>{" "}
-          <div className="form-field">
-            <label className="form-label" htmlFor="lastname">
-              Last Name:
-            </label>
-            <input
-              // value={form.formValue.customerFirstName}
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerLastName: e.target.value,
-                })
-              }
-              className="form-input"
-              type="text"
-              id="lastname"
-            />
-          </div>
-          <div className="form-field">
-            <label className="form-label" htmlFor="email">
-              Email:
-            </label>
-            <input
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerEmail: e.target.value,
-                })
-              }
-              // value={form.formValue.customerLastName}
-              className="form-input"
-              type="text"
-              id="email"
-            />
-          </div>
-          <div className="form-field">
-            <label className="form-label" htmlFor="phone">
-              Phone:
-            </label>
-            <input
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerPhone: e.target.value,
-                })
-              }
-              // value={form.formValue.customerPhone}
-              className="form-input"
-              type="text"
-              id="phone"
-            />
-          </div>
-          <div className="form-field">
-            <label className="form-label" htmlFor="company">
-              Company:
-            </label>
-            <input
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerCompany: e.target.value,
-                })
-              }
-              // value={form.formValue.customerCompany}
-              className="form-input"
-              type="text"
-              id="company"
-            />
-          </div>
-          <div className="form-field">
-            <label className="form-label" htmlFor="budget">
-              Estimated Budget:
-            </label>
-            <input
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerBudget: e.target.value,
-                })
-              }
-              // value={form.formValue.customerBudget}
-              placeholder="$"
-              className="form-input"
-              type="number"
-              id="budget"
-            />
-          </div>
-          <div className="form-field">
-            <label className="form-label" htmlFor="tellus">
-              Tell us about your project:
-            </label>
-            <textarea
-              id="tellus"
-              name="tellus"
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerAbout: e.target.value,
-                })
-              }
-              // value={form.formValue.customerAbout}
-              // placeholder="..."
-              type="text"
-              className="form-textArea form-input"
-            />
-          </div>{" "}
-          <div className="form-field ">
-            {" "}
-            <label htmlFor="file">Attach an RFP</label>
-            <input
-              // value={form.formValue.customerAttachment}
-              ref={fileInput}
-              onChange={(e) =>
-                setForm({
-                  ...form,
-                  customerAttachment: fileInput.current.files[0],
-                })
-              }
-              className="input-file"
-              type="file"
-              name="file"
-              id="file"
-              accept=".doc, .docx,.ppt, .pptx,.txt,.pdf"
-            />
-          </div>
-          <div className="form-field">
-            <input
-              className="services-childrens-button"
-              id="form-send-btn"
-              type="submit"
-              value={"    SEND    "}
-            />
-          </div>
-        </form>
+        {formStatus === 2 ? (
+          tryAgain
+        ) : formStatus === 1 ? (
+          isLoading
+        ) : (
+          <FormDiv form={form} setForm={setForm} handleSubmit={handleSubmit} />
+        )}
       </div>
     </SvgWave>
   );
