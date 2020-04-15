@@ -1,15 +1,30 @@
 @media all and (max-width: 799px) and (min-width: 520px) {
+  .nav-bar-container {
+    top: 5% !important;
+    width: 125px !important;
+  }
+  .burger-icon {
+    top: 5.5%;
+    right: 10px;
+    margin: 0;
+  }
+  .hide {
+    height: 3rem !important;
+  }
+  .show {
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .phone-num-div {
+    margin-right: 60% !important;
+    margin-top: 1.3rem !important;
+    height: 100% !important;
+  }
   .phone-num-svg-num {
     display: none;
   }
-  .phone-num-div {
-    margin-right: 8rem !important;
-    /* margin-top: 1rem !important; */
-  }
-  .nav-bar-container {
-    top: 5% !important;
-    width: 200px !important;
-  }
+
   #main-logo {
     left: -60px !important;
     /* top: 1.5rem; */

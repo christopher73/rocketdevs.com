@@ -11,6 +11,9 @@ import WebDesign from "./pages/Services/WebDesign";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import "./assets/css/index.css";
+import Portfolio from "./pages/Portfolio";
+
+import Resources from "./pages/Resources";
 
 export default function App() {
   return (
@@ -20,6 +23,8 @@ export default function App() {
         {/* <Logo /> */}
         <Switch>
           <Route exact path="/" component={Landing} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/resources" component={Resources} />
           <Route path="/integration-modernization" component={IntAndMod} />
           <Route path="/seo-services" component={SEOservices} />
           <Route path="/software-development" component={SoftwareDev} />
