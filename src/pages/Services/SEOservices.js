@@ -8,6 +8,7 @@ import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import ProgressAnimation from "../../components/ProgressAnimation/ProgressAnimation";
 import "./styles.css";
 import Logo from "../../components/Logo/Logo";
+import { Helmet } from "react-helmet";
 
 export default function SEOservices() {
   const resultsData = [
@@ -29,6 +30,10 @@ export default function SEOservices() {
   ];
   return (
     <PageContainer>
+      <Helmet>
+        <title>RocketDevs | SEO</title>
+        <meta name="description" content={data[2].description} />
+      </Helmet>
       <ScrollUp />
       <Logo />
       <div

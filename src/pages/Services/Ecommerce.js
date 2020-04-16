@@ -6,6 +6,8 @@ import Logo from "../../components/Logo/Logo";
 import webDesign from "../../assets/img/webDesign.jpg";
 import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
+import { Helmet } from "react-helmet";
+
 import "./styles.css";
 export default function Ecommerce() {
   const resultsData = [
@@ -168,6 +170,10 @@ export default function Ecommerce() {
   ];
   return (
     <PageContainer>
+      <Helmet>
+        <title>RocketDevs | E-Commerce</title>
+        <meta name="description" content={data[0].description} />
+      </Helmet>
       <ScrollUp />
       <div
         style={{ backgroundImage: `url(${webDesign})` }}

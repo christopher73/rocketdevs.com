@@ -11,6 +11,7 @@ import serviceDivChildren from "../../components/Services/servicceDivChildren";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import ProgressAnimation from "../../components/ProgressAnimation/ProgressAnimation";
 import "./styles.css";
+import { Helmet } from "react-helmet";
 
 export default function IntAndMod() {
   const resultsData = [
@@ -65,6 +66,10 @@ export default function IntAndMod() {
 
   return (
     <PageContainer>
+      <Helmet>
+        <title>RocketDevs | Integration & Modernization</title>
+        <meta name="description" content={data[0].description} />
+      </Helmet>
       <ScrollUp />
       <Logo />
       <div

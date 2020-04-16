@@ -11,6 +11,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import "./assets/css/index.css";
 import Portfolio from "./pages/Portfolio";
+import FbChat from "./components/FbChat/FbChat";
+
+// import { Helmet } from "react-helmet";
 
 import Resources from "./pages/Resources";
 
@@ -19,11 +22,11 @@ export default function App() {
     <React.Fragment>
       <Router>
         <NavBar />
-        {/* <Logo /> */}
+        <FbChat />
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/resources" component={Resources} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/resources" component={Resources} />
           <Route path="/integration-modernization" component={IntAndMod} />
           <Route path="/seo-services" component={SEOservices} />
           <Route path="/software-development" component={SoftwareDev} />

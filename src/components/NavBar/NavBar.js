@@ -30,7 +30,7 @@ export default function NavBar(props) {
         </li>{" "}
         <li className="nav-item">
           <Link
-            to="/portfolio"
+            to="/portfolio/"
             onClick={() => props.show()}
             className="nav-link"
           >
@@ -112,7 +112,7 @@ export default function NavBar(props) {
         </li>{" "}
         <li className="nav-item">
           <Link
-            to="/resources"
+            to="/resources/"
             onClick={() => props.show()}
             className="nav-link"
           >

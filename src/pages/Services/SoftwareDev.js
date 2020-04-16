@@ -10,6 +10,7 @@ import iphone from "../../assets/img/iphone.png";
 import android from "../../assets/img/android.png";
 import cross from "../../assets/img/cross.png";
 import Logo from "../../components/Logo/Logo";
+import { Helmet } from "react-helmet";
 
 export default function SoftwareDev() {
   const resultsData = [
@@ -71,6 +72,10 @@ export default function SoftwareDev() {
   ];
   return (
     <PageContainer>
+      <Helmet>
+        <title>RocketDevs | Software Development</title>
+        <meta name="description" content={data[1].description} />
+      </Helmet>
       <ScrollUp />
       <Logo />
       <div
