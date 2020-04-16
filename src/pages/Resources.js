@@ -5,7 +5,7 @@ import Logo from "../components/Logo/Logo";
 
 export default function Resources() {
   const [news, setNews] = useState([]);
-  const api = "http://hn.algolia.com/api/v1/search_by_date?tags=story";
+  const api = "https://hn.algolia.com/api/v1/search_by_date?tags=story";
 
   useEffect(() => {
     async function fetchData() {
