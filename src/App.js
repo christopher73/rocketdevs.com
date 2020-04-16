@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import NavBar from "./components/NavBar";
@@ -11,18 +11,20 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import "./assets/css/index.css";
 import Portfolio from "./pages/Portfolio";
-import FbChat from "./components/FbChat/FbChat";
+import Resources from "./pages/Resources";
+
+const FbChat = React.lazy(() => import("./components/FbChat/FbChat"));
 
 // import { Helmet } from "react-helmet";
-
-import Resources from "./pages/Resources";
 
 export default function App() {
   return (
     <React.Fragment>
       <Router>
         <NavBar />
-        <FbChat />
+        <Suspense fallback={<div>...</div>}>
+          <FbChat />
+        </Suspense>
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/portfolio" component={Portfolio} />

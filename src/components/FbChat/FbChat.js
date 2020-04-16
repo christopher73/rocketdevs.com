@@ -15,12 +15,6 @@ import React from "react";
 import MessengerCustomerChat from "./lib/MessengerCustomerChat";
 
 export default function FbChat() {
-  React.useEffect(() => {
-    document.addEventListener("fb_init", (e) => window.FB.XFBML.parse());
-    return () => {
-      document.removeEventListener("fb_init", (e) => window.FB.XFBML.parse());
-    };
-  });
   return (
     <MessengerCustomerChat
       // shouldShowDialog={true}
@@ -29,7 +23,7 @@ export default function FbChat() {
       appId="522004081838280"
       version="6.0"
       greetingDialogDisplay="fade"
-      xfbml={false}
+      // xfbml={false}
     />
   );
 }
