@@ -7,7 +7,6 @@
   font-family: "Roboto", sans-serif;
   text-align: left;
   font-weight: 100;
-
   margin: auto;
   margin-top: 2rem;
   font-size: 1.3rem;
@@ -48,7 +47,6 @@
 }
 .about-me-left-title {
   display: inline-block;
-  /* margin: 10px 0; */
   background-color: rgb(70, 52, 78);
   color: white;
   padding: 5px;
@@ -59,7 +57,7 @@
 .whoweare-h1 {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.1rem;
   font-size: 5rem;
   width: 100%;
@@ -72,7 +70,6 @@
   font-size: 1.7rem;
   color: #ef0d33;
 }
-
 .whoweare-div {
   width: 60%;
   color: #39207c;
@@ -84,6 +81,7 @@
   padding: 2rem;
   padding-top: 0;
   margin: auto;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   font-size: 1.3rem;
+  font-weight: 200;
 }

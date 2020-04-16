@@ -63,13 +63,17 @@ export const data = [
         ></rect>
       </svg>
     ),
-    description: `Looking to create a dynamic site? 
-    Our web developers can create custom 
-    software for your business needs or 
-    help you implement existing software 
-    to your site. Our team uses trending 
-    inspirations and proven practices to 
-    turn your website into your best sales asset`
+    description: (
+      <>
+        <span className="whoweare-wrd">Looking to create a dynamic site? </span>
+        <p>
+          Our web developers can create custom software for your business needs
+          or help you implement existing software to your site. Our team uses
+          trending inspirations and proven practices to turn your website into
+          your best sales asset
+        </p>
+      </>
+    ),
   },
   {
     title: "Software Development",
@@ -140,7 +144,7 @@ export const data = [
     we use RPA to configure 
     software “bots” to emulate the actions of a 
     human interacting within your digital systems 
-    to execute a business process.`
+    to execute a business process.`,
   },
 
   {
@@ -211,7 +215,7 @@ export const data = [
     description: `Are search engines ranking you 
     above competitors? Or, is your Google ranking 
     nowhere to be found? SEO services will help 
-    you be found where customers actually look.`
+    you be found where customers actually look.`,
   },
   {
     title: "Integration & Modernization",
@@ -285,8 +289,8 @@ export const data = [
     you think. Modern microsystem architecture 
     allows independent systems to use simple 
     Internet protocols to communicate and 
-    distribute work.`
-  }
+    distribute work.`,
+  },
 ];
 //  {
 //     title: "IT Services",

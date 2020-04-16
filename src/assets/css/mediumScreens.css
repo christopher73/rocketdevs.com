@@ -24,12 +24,16 @@
   .phone-num-svg-num {
     display: none;
   }
-
   #main-logo {
-    left: -60px !important;
-    /* top: 1.5rem; */
-    font-size: 0.7rem !important;
+    /* width: 150px; */
+    top: 2%;
+    left: 0;
+    right: auto;
+    transform: rotateY(0deg) rotate(0deg); /* needs Y at 0 deg to behave properly*/
+    transition: transform 2s;
+    font-size: 0.5rem !important;
   }
+
   .title {
     font-size: 1.7rem !important;
   }
