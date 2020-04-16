@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import SvgWave from "./SvgWave";
 import axios from "axios";
@@ -27,9 +27,10 @@ export default function Forms() {
     customerAbout: "",
     customerAttachment: "",
   });
-  console.log(
-    "form status : " + formStatus + "\nform data : " + JSON.stringify(form)
-  );
+
+  // console.log(
+  //   "form status : " + formStatus + "\nform data : " + JSON.stringify(form)
+  // );
 
   function handleSubmit(e) {
     e.preventDefault();

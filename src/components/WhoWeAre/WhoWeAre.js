@@ -46,7 +46,7 @@ export default function WhoWeAre() {
       id="about"
     >
       <div className="about-me-left">
-        <img className="about-me-left-img" src={pic1}></img>
+        <img className="about-me-left-img" alt="about-me-left-img" src={pic1} />
         <h3 className="about-me-left-title">ABOUT</h3>
         <h4>FRESH SOLUTIONS FOR YOU</h4>
         <p>

@@ -3,6 +3,16 @@
     top: 5% !important;
     width: 100px !important;
   }
+  #main-logo {
+    /* width: 150px; */
+    top: 2%;
+    left: 0;
+    right: auto;
+    transform: rotateY(0deg) rotate(0deg); /* needs Y at 0 deg to behave properly*/
+    transition: transform 2s;
+    font-size: 0.5rem !important;
+  }
+
   .burger-icon {
     top: 5.5%;
     right: 10px;
@@ -30,11 +40,16 @@
   }
   .about-me-right {
     width: 100%;
+    padding: 10% 0;
   }
   .about-me-left {
-    text-align: center;
-    min-width: 98%;
-    padding: 1%;
+    width: 92%;
+    padding: 4%;
+  }
+  .about-me-left-title {
+    margin-top: 4.5rem;
+    display: inline-block;
+    padding: 5px;
     font-size: smaller;
   }
   .about-me-left p {
@@ -51,12 +66,6 @@
   .phone-num-svg-num {
     display: none;
   }
-  #main-logo {
-    left: -55px;
-    /*  top: 10%; */
-    font-size: 0.6rem !important;
-    /* position: absolute !important; */
-  }
 
   .container-header {
     height: 40vh !important;
@@ -67,7 +76,7 @@
   .services-main-div,
   .services-childrens-div {
     margin: auto !important;
-    margin-top: 15px !important;
+    margin-top: 0px !important;
     margin-bottom: 15px !important;
     padding: 0 !important;
     width: 90% !important;

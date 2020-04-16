@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
-import Logo from "./components/Logo/Logo";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer/Footer";
 import IntAndMod from "./pages/Services/IntAndMod";

@@ -6,7 +6,7 @@ export default function () {
   // const navDiv = useRef(null);
   const [show, setShow] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [scrolling, setScrolling] = useState(false);
+  // const [scrolling, setScrolling] = useState(false);
 
   function toggle() {
     show ? setShow(false) : setShow(true);
@@ -16,7 +16,7 @@ export default function () {
   useEffect(() => {
     const onScroll = (e) => {
       setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+      // setScrolling(e.target.documentElement.scrollTop > scrollTop);
     };
     window.addEventListener("scroll", onScroll);
 

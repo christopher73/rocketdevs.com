@@ -254,8 +254,6 @@ export default function TermsAndConditions() {
         website are provided free of charge, we will not be liable for any loss
         or damage of any nature.
       </p>
-      <h2></h2>
-      <p></p>
     </div>
   );
 }
