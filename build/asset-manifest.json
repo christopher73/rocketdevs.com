@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ae92fb41.chunk.css",
-    "main.js": "/static/js/main.482b2098.chunk.js",
-    "main.js.map": "/static/js/main.482b2098.chunk.js.map",
+    "main.js": "/static/js/main.a80b0ee5.chunk.js",
+    "main.js.map": "/static/js/main.a80b0ee5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.570af3e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.570af3e9.js.map",
     "static/css/2.f524894f.chunk.css": "/static/css/2.f524894f.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.6f2db57d.chunk.js": "/static/js/3.6f2db57d.chunk.js",
     "static/js/3.6f2db57d.chunk.js.map": "/static/js/3.6f2db57d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9dfad5376c149b2bf3e44d81a32a0c67.js": "/precache-manifest.9dfad5376c149b2bf3e44d81a32a0c67.js",
+    "precache-manifest.e4d76156cbb79083307165bdee03fc4a.js": "/precache-manifest.e4d76156cbb79083307165bdee03fc4a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f524894f.chunk.css.map": "/static/css/2.f524894f.chunk.css.map",
     "static/css/main.ae92fb41.chunk.css.map": "/static/css/main.ae92fb41.chunk.css.map",
@@ -32,7 +32,7 @@
     "static/media/nccg.png": "/static/media/nccg.d7946985.png",
     "static/media/ncl-logo.png": "/static/media/ncl-logo.920243ff.png",
     "static/media/noni.png": "/static/media/noni.8fd6d233.png",
-    "static/media/pic1.jpg": "/static/media/pic1.23ac4f15.jpg",
+    "static/media/pic1.jpg": "/static/media/pic1.d19fec48.jpg",
     "static/media/starkclass-logo.svg": "/static/media/starkclass-logo.1cddc57a.svg",
     "static/media/starkclass.svg": "/static/media/starkclass.5e640d52.svg",
     "static/media/webDesign.jpg": "/static/media/webDesign.f1e10a74.jpg",
@@ -43,6 +43,6 @@
     "static/css/2.f524894f.chunk.css",
     "static/js/2.ef5f6aeb.chunk.js",
     "static/css/main.ae92fb41.chunk.css",
-    "static/js/main.482b2098.chunk.js"
+    "static/js/main.a80b0ee5.chunk.js"
   ]
 }
