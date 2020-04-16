@@ -9,6 +9,7 @@ import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import cwp from "../../assets/img/1.jpg";
 import wp from "../../assets/img/wp.png";
 import ec from "../../assets/img/ec.png";
+import { Helmet } from "react-helmet";
 
 import "./styles.css";
 export default function WebDesign() {
@@ -251,6 +252,10 @@ export default function WebDesign() {
   ];
   return (
     <PageContainer>
+      <Helmet>
+        <title>RocketDevs | Web Design</title>
+        <meta name="description" content={data[0].description} />
+      </Helmet>
       <ScrollUp />
       <Logo />
       <div

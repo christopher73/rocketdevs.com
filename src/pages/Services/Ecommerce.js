@@ -1,12 +1,12 @@
 import React from "react";
 import PageContainer from "../../components/PageContainer/PageContainer";
-import { data } from "../../components/Services/servicesData";
-import Forms from "../../components/Forms/Forms";
-import Logo from "../../components/Logo/Logo";
-import webDesign from "../../assets/img/webDesign.jpg";
-import serviceDivChildren from "../../components/Services/servicceDivChildren";
-import ScrollUp from "../../components/ScrollUp/ScrollUp";
-import { Helmet } from "react-helmet";
+// import { data } from "../../components/Services/servicesData";
+// import Forms from "../../components/Forms/Forms";
+// import Logo from "../../components/Logo/Logo";
+// import webDesign from "../../assets/img/webDesign.jpg";
+// import serviceDivChildren from "../../components/Services/servicceDivChildren";
+// import ScrollUp from "../../components/ScrollUp/ScrollUp";
+// import { Helmet } from "react-helmet";
 
 import "./styles.css";
 export default function Ecommerce() {
@@ -170,7 +170,7 @@ export default function Ecommerce() {
   ];
   return (
     <PageContainer>
-      <Helmet>
+      {/* <Helmet>
         <title>RocketDevs | E-Commerce</title>
         <meta name="description" content={data[0].description} />
       </Helmet>
@@ -189,7 +189,7 @@ export default function Ecommerce() {
       <div className="services-main-div">
         {resultsData.map((elem, i) => serviceDivChildren(elem, i, true, false))}
       </div>
-      <Forms />
+      <Forms /> */}
     </PageContainer>
   );
 }

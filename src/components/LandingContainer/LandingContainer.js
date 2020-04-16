@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import FbChat from "../FbChat/FbChat";
 import { HashLink } from "react-router-hash-link";
 import { useDencrypt } from "use-dencrypt-effect";
 import { useInterval } from "../../utils/useInterval";
@@ -27,7 +26,7 @@ export default function LandingContainer(props) {
         <div className="main-div">
           <div className="main-div1">
             <Logo />
-            <FbChat />
+
             <h1 className="main-div1-h1">
               {one.result} <br />
               {two.result} <br />

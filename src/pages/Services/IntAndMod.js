@@ -68,7 +68,7 @@ export default function IntAndMod() {
     <PageContainer>
       <Helmet>
         <title>RocketDevs | Integration & Modernization</title>
-        <meta name="description" content={data[0].description} />
+        <meta name="description" content={data[3].description} />
       </Helmet>
       <ScrollUp />
       <Logo />
