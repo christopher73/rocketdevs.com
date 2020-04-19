@@ -76,7 +76,11 @@ export default function IntAndMod() {
         style={{ backgroundImage: `url(${webDesign})` }}
         className="container-header"
       >
-        <h1 className="title">{data[3].title}</h1>{" "}
+        <h1 className="title">
+          {data[3].title.split("&")[0]}
+          <br />& <br />
+          {data[3].title.split("&")[1]}
+        </h1>{" "}
       </div>
       <div
         style={{ textAlign: "center", paddingTop: 40 }}

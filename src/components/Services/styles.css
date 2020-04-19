@@ -56,12 +56,13 @@
   font-size: 1.7rem;
 }
 .services-childrens-p {
-  color: #7f7fd6;
+  color: #1c1c72;
   margin-bottom: 1rem;
   line-height: 1.85;
   font-size: medium;
   display: block;
   text-align: center;
+  font-weight: lighter;
 }
 .services-childrens-button {
   text-decoration: none;

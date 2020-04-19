@@ -283,7 +283,7 @@ export const data = [
       </svg>
     ),
     description: `As technology changes, your 
-    systems need to change in order to stay 
+    systems need to change to stay 
     efficient and competitive. Modernizing 
     your software may not be as painful as 
     you think. Modern microsystem architecture 

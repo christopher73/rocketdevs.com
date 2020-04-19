@@ -50,16 +50,16 @@ export default function WhoWeAre() {
         <h3 className="about-me-left-title">ABOUT</h3>
         <h4>FRESH SOLUTIONS FOR YOU</h4>
         <p>
-          <span className="whoweare-wrd">RocketDevs </span>is the custom
+          <span className="whoweare-wrd">RocketDevs </span> is the custom
           software development partner of choice for companies that want to
           optimize their business processes and customer experiences with
           efficient, secure and reliable software application solutions. Whether
           you need to update and integrate legacy systems with leading-edge
           technologies or design and build custom software solutions from the
           ground up, RocketDevs is the team to rely upon. Whatever your software
-          application need, we are a fully committed, energetic team of kick-ass
-          analysts, designers, developers, and project managers with one goal in
-          mind -- helping our clients and their products shine.
+          application needs, we are a fully committed, energetic team of
+          kick-ass analysts, designers, developers, and project managers with
+          one goal in mind -- helping our clients and their products shine.
         </p>
       </div>
 
