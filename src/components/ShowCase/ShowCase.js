@@ -46,6 +46,7 @@ export default function ShowCase() {
         <div
           key={i}
           className="show-case-child"
+          onClick={() => window.open(image.link, "_blank")}
           style={{ backgroundImage: `url(${image.imageSrc})` }}
         >
           <div
