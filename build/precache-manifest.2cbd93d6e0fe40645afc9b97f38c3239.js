@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b1d9523873004a611e61150f032dd0d",
+    "revision": "a88f7ba9443c28a9c493f45340fb428c",
     "url": "/index.html"
   },
   {
-    "revision": "1213e3088db64d1721f6",
+    "revision": "4b460ed29147c2469a08",
     "url": "/static/css/2.f524894f.chunk.css"
   },
   {
-    "revision": "db5fc5b8ab7e2575ee38",
-    "url": "/static/css/main.9571b8bb.chunk.css"
+    "revision": "60760ae6f6995d16e7e7",
+    "url": "/static/css/main.d4e9f809.chunk.css"
   },
   {
-    "revision": "1213e3088db64d1721f6",
-    "url": "/static/js/2.ef5f6aeb.chunk.js"
+    "revision": "4b460ed29147c2469a08",
+    "url": "/static/js/2.f42958b3.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.ef5f6aeb.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f42958b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "673c314b0a67e1245471",
-    "url": "/static/js/3.6f2db57d.chunk.js"
+    "revision": "32f1ccd84517e7c50e6a",
+    "url": "/static/js/3.f1c48dc5.chunk.js"
   },
   {
-    "revision": "db5fc5b8ab7e2575ee38",
-    "url": "/static/js/main.bde28d20.chunk.js"
+    "revision": "60760ae6f6995d16e7e7",
+    "url": "/static/js/main.5585afb9.chunk.js"
   },
   {
-    "revision": "cbdff5a1cdd834f12b7a",
-    "url": "/static/js/runtime-main.570af3e9.js"
+    "revision": "0a167f4147eca0e087a0",
+    "url": "/static/js/runtime-main.b5cc0723.js"
   },
   {
     "revision": "82df77a89e0de60eb4beead09cc4d933",
@@ -86,6 +86,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9546c63662f0ec288050522304977f15",
     "url": "/static/media/iphone.9546c636.png"
+  },
+  {
+    "revision": "b6a64ece227cc5dd32f9631767c22eec",
+    "url": "/static/media/middwayllc-logo.b6a64ece.png"
+  },
+  {
+    "revision": "882d894347985ffdfaadf8d1f865b9e5",
+    "url": "/static/media/middwayllc.882d8943.png"
   },
   {
     "revision": "8fd6d2337270611faea0ca71f274fcfd",

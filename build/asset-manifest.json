@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9571b8bb.chunk.css",
-    "main.js": "/static/js/main.bde28d20.chunk.js",
-    "main.js.map": "/static/js/main.bde28d20.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.570af3e9.js",
-    "runtime-main.js.map": "/static/js/runtime-main.570af3e9.js.map",
+    "main.css": "/static/css/main.d4e9f809.chunk.css",
+    "main.js": "/static/js/main.5585afb9.chunk.js",
+    "main.js.map": "/static/js/main.5585afb9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b5cc0723.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b5cc0723.js.map",
     "static/css/2.f524894f.chunk.css": "/static/css/2.f524894f.chunk.css",
-    "static/js/2.ef5f6aeb.chunk.js": "/static/js/2.ef5f6aeb.chunk.js",
-    "static/js/2.ef5f6aeb.chunk.js.map": "/static/js/2.ef5f6aeb.chunk.js.map",
-    "static/js/3.6f2db57d.chunk.js": "/static/js/3.6f2db57d.chunk.js",
-    "static/js/3.6f2db57d.chunk.js.map": "/static/js/3.6f2db57d.chunk.js.map",
+    "static/js/2.f42958b3.chunk.js": "/static/js/2.f42958b3.chunk.js",
+    "static/js/2.f42958b3.chunk.js.map": "/static/js/2.f42958b3.chunk.js.map",
+    "static/js/3.f1c48dc5.chunk.js": "/static/js/3.f1c48dc5.chunk.js",
+    "static/js/3.f1c48dc5.chunk.js.map": "/static/js/3.f1c48dc5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.09bc13ebfcc3f5f083c989b67da5af06.js": "/precache-manifest.09bc13ebfcc3f5f083c989b67da5af06.js",
+    "precache-manifest.2cbd93d6e0fe40645afc9b97f38c3239.js": "/precache-manifest.2cbd93d6e0fe40645afc9b97f38c3239.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f524894f.chunk.css.map": "/static/css/2.f524894f.chunk.css.map",
-    "static/css/main.9571b8bb.chunk.css.map": "/static/css/main.9571b8bb.chunk.css.map",
-    "static/js/2.ef5f6aeb.chunk.js.LICENSE.txt": "/static/js/2.ef5f6aeb.chunk.js.LICENSE.txt",
+    "static/css/main.d4e9f809.chunk.css.map": "/static/css/main.d4e9f809.chunk.css.map",
+    "static/js/2.f42958b3.chunk.js.LICENSE.txt": "/static/js/2.f42958b3.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.82df77a8.jpg",
     "static/media/android.png": "/static/media/android.9c710977.png",
     "static/media/aws.svg": "/static/media/aws.5830aea3.svg",
@@ -30,6 +30,8 @@
     "static/media/garagenet.png": "/static/media/garagenet.1f3f8ca7.png",
     "static/media/google.svg": "/static/media/google.09643848.svg",
     "static/media/iphone.png": "/static/media/iphone.9546c636.png",
+    "static/media/middwayllc-logo.png": "/static/media/middwayllc-logo.b6a64ece.png",
+    "static/media/middwayllc.png": "/static/media/middwayllc.882d8943.png",
     "static/media/noni.png": "/static/media/noni.8fd6d233.png",
     "static/media/pic1.jpg": "/static/media/pic1.d19fec48.jpg",
     "static/media/starkclass-logo.svg": "/static/media/starkclass-logo.1cddc57a.svg",
@@ -38,10 +40,10 @@
     "static/media/wp.png": "/static/media/wp.a52da5e3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.570af3e9.js",
+    "static/js/runtime-main.b5cc0723.js",
     "static/css/2.f524894f.chunk.css",
-    "static/js/2.ef5f6aeb.chunk.js",
-    "static/css/main.9571b8bb.chunk.css",
-    "static/js/main.bde28d20.chunk.js"
+    "static/js/2.f42958b3.chunk.js",
+    "static/css/main.d4e9f809.chunk.css",
+    "static/js/main.5585afb9.chunk.js"
   ]
 }

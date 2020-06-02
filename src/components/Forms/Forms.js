@@ -3,8 +3,8 @@ import "./styles.css";
 import SvgWave from "./SvgWave";
 import axios from "axios";
 import FormDiv from "./FormDiv";
-//const URL = "https://api.c-fajardo.com/forms/quote";
-const URLD = "http://127.0.0.1:5000/api/form/rocketdevs/quote";
+const URLD = "https://api.c-fajardo.com/api/rocketdevs/form-to-email";
+// const URLD = "http://127.0.0.1:5000/api/rocketdevs/form-to-email";
 
 export default function Forms() {
   // var formData = new FormData();
