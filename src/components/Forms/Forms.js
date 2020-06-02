@@ -44,7 +44,7 @@ export default function Forms() {
     );
     //console.log(form);
     axios
-      .post(URLD, form)
+      .post(URLD, form, { headers: { "Access-Control-Allow-Origin": "*" } })
       .then((res) => {
         setformStatus(2);
         console.log("form status " + formStatus);
